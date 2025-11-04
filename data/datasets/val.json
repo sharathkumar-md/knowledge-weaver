@@ -1,0 +1,65 @@
+[
+  {
+    "input": "# LLMs Process Lists With General Filter Heads **URL:** https://arxiv.org/pdf/2510.26784 **Type:** pdf **Domain:** arxiv.org **Saved At:** 2025-11-02T14:58:19.343Z --- ## Extracted Content Under Review LLMSPROCESSLISTSWITHGENERALFILTERHEADS Arnab Sen Sharma∗, Giordano Rogers, Natalie Shapira, and David Bau Khoury College of Computer Sciences, Northeastern University ABSTRACT We investigate the mechanisms underlying a range of list-processing tasks in LLMs, and we find that LLMs have learned to encode a compact, causal representation of a general filtering operation that mirrors the generic “filter” function of functional programming. Using causal mediation analysis on a diverse set of list-processing tasks, we find that a small number of attention heads, which we dubfilter heads, encode a compact representation of the filtering predicate in their query states at certain tokens. We demonstrate that this predicate representation is general and portable: it can be extracted and reapplied to execute the same filtering operation on different collections, presented in different formats, languages, or even in tasks. However, we also identify situations where transformer LMs can exploit a different strategy for filtering: eagerly evaluating if an item satisfies the predicate and storing this intermediate result as a flag directly in the item representations. Our results reveal that transformer LMs can develop human-interpretable implementations of abstract computational operations that generalize in ways that are surprisingly similar to strategies used in traditional functional programming patterns. 1 INTRODUCTION When asked tofind the fruitin a list, language models reveal a surprisingly systematic mechanism: they don’t solve each filtering task anew, but instead encode predicates into portable representations. This neural representation of“is this a fruit?”can be extracted from one context and applied to a different list, presented in a different format, in a different language, and to some extent to a different task. These abstract, reusable operations suggest that transformers develop modular computational primitives rather than task-specific heuristics.",
+    "output": "S:That|R:IS_A|O:Surprisingly\nS:Llms|R:HAS_PROPERTY|O:Learned\nS:Rogers|R:DEFINED_AS|O:Natalie Shapira\nS:Sciences|R:DEFINED_AS|O:Northeastern University Abstract We Investigate The\nS:Llms|R:DEFINED_AS|O:And We Find That Llms Have\nS:Compact|R:DEFINED_AS|O:Causal Representation Of A General Filtering\nS:Tasks|R:DEFINED_AS|O:We Find That A Small Number\nS:Heads|R:DEFINED_AS|O:Which We Dubfilter Heads\nS:Portable|R:DEFINED_AS|O:It Can Be Extracted And Reapplied\nS:Collections|R:DEFINED_AS|O:Presented In Different Formats",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "Function is a type of Model. It is used for data processing.",
+    "output": "S:Function|R:IS_A|O:Model\nS:Function|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Algorithm consists of Node and Node. The Node connects to the Node.",
+    "output": "S:Algorithm|R:HAS_PART|O:Node\nS:Algorithm|R:HAS_PART|O:Node\nS:Node|R:INTERACTS_WITH|O:Node",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Model consists of Output Layer and Node. The Output Layer transforms the Node.",
+    "output": "S:Model|R:HAS_PART|O:Output Layer\nS:Model|R:HAS_PART|O:Node\nS:Output Layer|R:INTERACTS_WITH|O:Node",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure causes improved performance. This can lead to better accuracy.",
+    "output": "S:Data Structure|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network is a type of Data Structure. It is used for data processing.",
+    "output": "S:Neural Network|R:IS_A|O:Data Structure\nS:Neural Network|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Cherry, Knife, Pants, Ambulance. Find the fruit. a. Binder b. Peach c. Watch d. Scooter e. Phone Answer:Cherry b.PeachAnswer: d.Scooter (a) (c) (d) Find the vehicle (b) source run, (e) (f) 2025303540455055 Layer0 8 16 24 32 40 48 56 Head Index -2.0-1.5-1.0-0.50.0+0.5+1.0+1.5+2.0 (g) AIE Figure 1:A filter head [35,19] in Llama-70B encodes a compact representation of the predicate“is this fruit?”. (a)Within a prompt psrcto find a fruit in a list, we examine the attention head’s behavior at the last token “:”(b) The head focuses its attention on the one fruit in the list.(c)We examine the same attention head’s behavior in a second prompt pdestsearching a different list for a vehicle(d)and we also examine the behavior of the head when patching its query state to use the qsrcvector from the source context.(e)The head attends to the vehicle but then(f)redirects its attention to the fruit in the new list after the query vector is patched.(g)A sparse set of attention heads work together to conduct filtering over a wide range of predicates. These filter heads are concentrated in the middle layers (out of 80 layers in Llama-70B). ∗Correspondence to sensharma.a@northeastern.edu. Websitefilter.baulab.info. 1arXiv:2510.26784v1 [cs.AI] 30 Oct 2025 Under Review To understand this phenomenon systematically, we turn to Marr’s three levels of analysis (Marr, 1982). At thecomputationallevel, we identify what is being computed: the selection of elements satisfying a predicate. At thealgorithmiclevel, we reveal how this is achieved: through a three phase computation corresponding to amap,filter, andreduce, occurring in that order. Themapstep is equivalent to populating the latents of the items in a list with the right associations or semantic information, a step that has been documented in prior literature (Geva et al., 2023; Meng et al., 2022). In this work we focus on the non-trivial computation step,filter, that follows after map. At the",
+    "output": "S:Heads|R:IS_A|O:Concentrated\nS:That|R:HAS_PROPERTY|O:Been\nS:List|R:DEFINED_AS|O:We Examine The Attention Head\nS:Systematically|R:DEFINED_AS|O:We Turn To Marr\nS:Thecomputationallevel|R:DEFINED_AS|O:We Identify What Is Being Computed\nS:Thealgorithmiclevel|R:DEFINED_AS|O:We Reveal How This Is Achieved\nS:Andreduce|R:DEFINED_AS|O:Occurring In That Order\nS:Information|R:DEFINED_AS|O:Step That Has Been Documented\nS:Filter|R:DEFINED_AS|O:That Follows After Map\nS:List|R:AFTER|O:The",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "Data Structure causes improved performance. This can lead to better accuracy.",
+    "output": "S:Data Structure|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "breaks down tasks, delegates them to worker LLMs, and synthesizes their results. When to use this workflow: This workflow is well-suited for complex tasks where you can’t predict the subtasks needed (in coding, for example, the number of files that need to be changed and the nature of the change in each file likely depend on the task). Whereas it’s topographically similar, the key difference from parallelization is its flexibility—subtasks aren't pre-defined, but determined by the orchestrator based on the specific input. Example where orchestrator-workers is useful: Coding products that make complex changes to multiple files each time. Search tasks that involve gathering and analyzing information from multiple sources for possible relevant information. Workflow: Evaluator-optimizer In the evaluator-optimizer workflow, one LLM call generates a response while another provides evaluation and feedback in a loop. When to use this workflow: This workflow is particularly effective when we have clear evaluation criteria, and when iterative refinement provides measurable value. The two signs of good fit are, first, that LLM responses can be demonstrably improved when a human articulates their feedback; and second, that the LLM can provide such feedback. This is analogous to the iterative writing process a human writer might go through when producing a polished document. Examples where evaluator-optimizer is useful: Literary translation where there are nuances that the translator LLM might not capture initially, but where an evaluator LLM can provide useful critiques. Complex search tasks that require multiple rounds of searching and analysis to gather comprehensive information, where the evaluator decides whether further searches are warranted. Agents are emerging in production as LLMs mature in key capabilities—understanding complex inputs, engaging in reasoning and planning, using tools reliably, and recovering from errors. Agents begin their work with either a command from, or interactive discussion with, the human user. Once",
+    "output": "S:There|R:IS_A|O:Nuances\nS:Searches|R:IS_A|O:Warranted\nS:Agents|R:IS_A|O:Emerging\nS:We|R:HAS_PROPERTY|O:Clear\nS:Tasks|R:DEFINED_AS|O:Delegates Them To Worker Llms\nS:Workflow|R:DEFINED_AS|O:This Workflow Is Well\nS:Coding|R:DEFINED_AS|O:For Example\nS:Similar|R:DEFINED_AS|O:Key Difference From Parallelization Is\nS:Defined|R:DEFINED_AS|O:But Determined By The Orchestrator Based\nS:Useful|R:DEFINED_AS|O:Coding Products That Make Complex Changes",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  }
+]

@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Model files
+models/checkpoints/*.bin
+models/checkpoints/*.safetensors
+models/lora/*.bin
+models/lora/*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Data files (keep structure, ignore content)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/datasets/train/*
+!data/datasets/train/.gitkeep
+data/datasets/val/*
+!data/datasets/val/.gitkeep
+data/datasets/test/*
+!data/datasets/test/.gitkeep
+
+# Vector databases
+data/chroma_db/
+data/faiss_index/
+*.index
+
+# Graph databases
+data/neo4j/
+data/graph_db/
+*.db
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Temporary files
+*.tmp
+temp/
+cache/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Hugging Face cache
+.cache/
+transformers_cache/

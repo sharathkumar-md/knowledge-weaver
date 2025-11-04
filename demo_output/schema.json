@@ -1,0 +1,440 @@
+{
+  "nodes": {
+    "workflows": {
+      "id": "workflows",
+      "label": "Workflows",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "systems": {
+      "id": "systems",
+      "label": "Systems",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    },
+    "tools": {
+      "id": "tools",
+      "label": "Tools",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "orchestrated": {
+      "id": "orchestrated",
+      "label": "Orchestrated",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "consistently": {
+      "id": "consistently",
+      "label": "Consistently",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "most_successful_implementations_weren": {
+      "id": "most_successful_implementations_weren",
+      "label": "Most Successful Implementations Weren",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "instead": {
+      "id": "instead",
+      "label": "Instead",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "they_were_building_with_simple": {
+      "id": "they_were_building_with_simple",
+      "label": "They Were Building With Simple",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "post": {
+      "id": "post",
+      "label": "Post",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "we_share_what_we": {
+      "id": "we_share_what_we",
+      "label": "We Share What We",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "ourselves": {
+      "id": "ourselves",
+      "label": "Ourselves",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "and_give_practical_advice_for_developers": {
+      "id": "and_give_practical_advice_for_developers",
+      "label": "And Give Practical Advice For Developers",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "periods": {
+      "id": "periods",
+      "label": "Periods",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "using_various_tools_to_accomplish_complex": {
+      "id": "using_various_tools_to_accomplish_complex",
+      "label": "Using Various Tools To Accomplish Complex",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "anthropic": {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "we_categorize_all_these_variations_as": {
+      "id": "we_categorize_all_these_variations_as",
+      "label": "We Categorize All These Variations As",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    "but_draw_an_important_architectural_distinction": {
+      "id": "but_draw_an_important_architectural_distinction",
+      "label": "But Draw An Important Architectural Distinction",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.282110",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    },
+    "agents": {
+      "id": "agents",
+      "label": "Agents",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.282110",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    },
+    "workflows_are_systems_where_llms_and": {
+      "id": "workflows_are_systems_where_llms_and",
+      "label": "Workflows Are Systems Where Llms And",
+      "type": "concept",
+      "aliases": [],
+      "properties": {},
+      "provenance": [],
+      "created_at": "2025-11-04T07:01:03.282110",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    }
+  },
+  "edges": [
+    {
+      "source_id": "workflows",
+      "target_id": "systems",
+      "relation": "IS_A",
+      "type": "IS_A",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+) are (?:types of |kinds of )?(\\w+)"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "tools",
+      "target_id": "orchestrated",
+      "relation": "IS_A",
+      "type": "IS_A",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+) are (?:types of |kinds of )?(\\w+)"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "consistently",
+      "target_id": "most_successful_implementations_weren",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "instead",
+      "target_id": "they_were_building_with_simple",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "post",
+      "target_id": "we_share_what_we",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "ourselves",
+      "target_id": "and_give_practical_advice_for_developers",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "periods",
+      "target_id": "using_various_tools_to_accomplish_complex",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.280708"
+    },
+    {
+      "source_id": "anthropic",
+      "target_id": "we_categorize_all_these_variations_as",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.280708",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.280708",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    },
+    {
+      "source_id": "systems",
+      "target_id": "but_draw_an_important_architectural_distinction",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.282110",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.282110",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    },
+    {
+      "source_id": "agents",
+      "target_id": "workflows_are_systems_where_llms_and",
+      "relation": "DEFINED_AS",
+      "type": "RELATED_TO",
+      "properties": {},
+      "confidence": 0.7,
+      "provenance": [
+        {
+          "source": "demo",
+          "method": "pattern",
+          "timestamp": "2025-11-04T07:01:03.282110",
+          "confidence": 0.7,
+          "metadata": {
+            "source": "demo",
+            "method": "pattern",
+            "pattern": "(\\w+)[:,] (\\w+(?:\\s+\\w+){1,5})"
+          }
+        }
+      ],
+      "created_at": "2025-11-04T07:01:03.282110",
+      "updated_at": "2025-11-04T07:01:03.282110"
+    }
+  ],
+  "statistics": {
+    "total_nodes": 19,
+    "total_edges": 10,
+    "node_types": {
+      "concept": 19
+    },
+    "edge_types": {
+      "IS_A": 2,
+      "RELATED_TO": 8
+    },
+    "avg_confidence": 0.7000000000000001,
+    "nodes_with_provenance": 0,
+    "edges_with_provenance": 10
+  }
+}

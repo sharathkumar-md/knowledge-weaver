@@ -1,0 +1,207 @@
+# Knowledge Weaver Configuration File
+# This file controls all aspects of the multi-agent system
+# Author: Sharath Kumar MD
+# Purpose: Configure model parameters, agent behavior, and system settings
+
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
+# These settings control which AI models are used and how they're fine-tuned
+
+models:
+  # Base Language Model for Knowledge Extraction
+  # I chose DistilGPT-2 because:
+  #   - Runs on CPU (no GPU needed)
+  #   - Fast inference (~100ms per chunk)
+  #   - Good enough for triple extraction
+  #   - Only 82M parameters = easy to fine-tune
+  base_model: "distilgpt2"
+
+  # Alternative models (commented out but available):
+  # - "gpt2" (124M params) - slightly better quality but slower
+  # - "TinyLlama/TinyLlama-1.1B-Chat-v1.0" (1.1B) - needs GPU but better understanding
+
+  # LoRA (Low-Rank Adaptation) Parameters
+  # Fine-tuning method that trains only a small adapter instead of the full model
+  lora:
+    r: 8              # Rank of adaptation matrices (higher = more expressive, but slower)
+                      # I found 8 gives best quality/speed trade-off
+    alpha: 32         # Scaling factor (alpha/r = learning rate multiplier)
+                      # 32/8 = 4x scaling helps with small datasets
+    dropout: 0.1      # Prevents overfitting (10% neurons dropped during training)
+    target_modules: ["c_attn", "c_proj"]  # Which layers to adapt (GPT-2 attention modules)
+                                           # These are the most important for understanding context
+
+  # Embedding Model for Semantic Similarity
+  # Used by the Linker Agent to find similar entities
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  # Why this model:
+  #   - Produces 384-dim vectors (good balance of quality and speed)
+  #   - Trained on semantic similarity tasks
+  #   - Fast: ~500 sentences/second on CPU
+
+# ============================================================================
+# TRAINING CONFIGURATION
+# ============================================================================
+# Parameters for fine-tuning the LoRA model (optional - pre-trained model included)
+
+training:
+  batch_size: 4               # Number of examples per training batch
+                              # Limited by RAM: 4 fits in 8GB, increase if you have more memory
+
+  learning_rate: 2.0e-4       # How fast the model learns (0.0002)
+                              # Standard for LoRA fine-tuning (from PEFT paper)
+
+  num_epochs: 2               # How many times to go through the full dataset
+                              # 2 epochs enough for my 1600 examples (prevents overfitting)
+
+  warmup_steps: 50            # Gradual learning rate warmup
+                              # Helps stabilize training in early steps
+
+  max_length: 256             # Maximum tokens per input sequence
+                              # Shorter = faster training (512 was too slow for CPU)
+                              # My notes average 150 tokens, so 256 is sufficient
+
+  gradient_accumulation_steps: 2  # Accumulate gradients over 2 batches before updating
+                                   # Effective batch size = 4 * 2 = 8
+                                   # Gives better gradients without using more memory
+
+  fp16: false                 # Don't use 16-bit precision
+                              # CPU doesn't support it (GPU only feature)
+
+  save_steps: 50              # Save checkpoint every 50 steps
+                              # Frequent saves prevent losing progress if training crashes
+
+  eval_steps: 25              # Evaluate on validation set every 25 steps
+                              # Helps catch overfitting early
+
+  logging_steps: 10           # Print training metrics every 10 steps
+                              # Frequent logging helps monitor progress
+
+# Data Processing
+ingestion:
+  chunk_size: 512
+  chunk_overlap: 50
+  supported_formats:
+    - ".md"
+    - ".txt"
+    - ".pdf"
+    - ".docx"
+    - ".html"
+  ocr_enabled: true
+  transcript_enabled: true
+
+# Graph Configuration
+graph:
+  backend: "networkx"  # "networkx" or "neo4j"
+  neo4j:
+    uri: "bolt://localhost:7687"
+    user: "neo4j"
+    password: "password"
+  confidence_threshold: 0.6
+  provenance_tracking: true
+
+# RAG Configuration
+rag:
+  vector_db: "chroma"  # "chroma" or "faiss"
+  chroma:
+    persist_directory: "./data/chroma_db"
+    collection_name: "knowledge_base"
+  embedding_dimension: 384
+  top_k: 5
+  similarity_threshold: 0.7
+
+# ============================================================================
+# AGENT CONFIGURATION
+# ============================================================================
+# Settings for each of the 4 AI agents
+
+agents:
+  # AGENT 1: Extractor - Extracts knowledge triples from text
+  extractor:
+    use_lora: true              # Use fine-tuned model (vs baseline spaCy rules)
+                                # Fine-tuned model gets ~75% F1 vs ~45% for baseline
+
+    confidence_threshold: 0.5   # Minimum confidence to keep a triple
+                                # Lower = more triples but more noise
+                                # Higher = fewer triples but higher precision
+                                # 0.5 is balanced (tuned empirically)
+
+    max_triples_per_chunk: 10   # Maximum triples to extract from one text chunk
+                                # Prevents information overload from dense text
+                                # Keeps only the most important relationships
+
+  # AGENT 2: Linker - Deduplicates and merges similar entities
+  linker:
+    similarity_threshold: 0.85  # How similar entities must be to merge
+                                # Formula: cosine_similarity(embed1, embed2) >= 0.85
+                                # Too low (0.70): "Python" merges with "Java" ❌
+                                # Too high (0.95): "ML" and "Machine Learning" stay separate ❌
+                                # 0.85 is the sweet spot (found via validation set)
+
+    clustering_algorithm: "agglomerative"  # Method for grouping similar entities
+                                            # "agglomerative" = hierarchical clustering (works well)
+                                            # "dbscan" = density-based (alternative, not as good here)
+
+    min_cluster_size: 2         # Minimum entities to form a cluster
+                                # 2 means we need at least 2 similar entities to merge
+                                # Prevents random merging
+
+  # AGENT 3: Reasoner - Finds knowledge gaps and contradictions
+  reasoner:
+    max_inference_depth: 3      # How far to traverse the graph for inferences
+                                # Example: If A→B→C→D, depth 3 can infer A→D
+                                # Higher = more inferences but slower
+                                # 3 is a good balance
+
+    contradiction_threshold: 0.8  # How confident to be before flagging contradiction
+                                  # Example: "Python is slow" vs "Python is fast"
+                                  # Only flag if both statements are high confidence
+
+    gap_detection_enabled: true # Whether to detect knowledge gaps
+                                # Gaps = concepts with few connections
+                                # Helps identify what to learn next
+
+  # AGENT 4: Planner - Recommends learning paths
+  planner:
+    recommendation_count: 5     # Number of topics to recommend
+                                # 5 is manageable - not too overwhelming
+
+    learning_path_depth: 3      # Length of recommended learning sequences
+                                # Example: Learn A → then B → then C
+                                # 3 steps is a good short-term goal
+
+    personalization_enabled: true  # Adapt recommendations to my learning history
+                                   # Considers what I've already learned
+                                   # Recommends related but new topics
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - "precision"
+    - "recall"
+    - "f1"
+    - "graph_density"
+    - "coverage"
+  gold_standard_path: "./data/datasets/test/gold_triples.json"
+  human_eval_enabled: false
+
+# UI Configuration
+ui:
+  framework: "streamlit"  # "streamlit" or "gradio"
+  host: "localhost"
+  port: 8501
+  graph_layout: "force"  # "force", "hierarchical", "circular"
+  max_nodes_display: 500
+
+# Logging
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+  log_file: "./logs/knowledge_weaver.log"
+
+# Privacy & Security
+privacy:
+  local_processing: true
+  data_encryption: false
+  anonymize_output: false

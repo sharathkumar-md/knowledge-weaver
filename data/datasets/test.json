@@ -1,0 +1,72 @@
+[
+  {
+    "input": "the task is clear, agents plan and operate independently, potentially returning to the human for further information or judgement. During execution, it's crucial for the agents to gain “ground truth” from the environment at each step (such as tool call results or code execution) to assess its progress. Agents can then pause for human feedback at checkpoints or when encountering blockers. The task often terminates upon completion, but it’s also common to include stopping conditions (such as a maximum number of iterations) to maintain control. Agents can handle sophisticated tasks, but their implementation is often straightforward. They are typically just LLMs using tools based on environmental feedback in a loop. It is therefore crucial to design toolsets and their documentation clearly and thoughtfully. We expand on best practices for tool development in Appendix 2 (\"Prompt Engineering your Tools\"). When to use agents: Agents can be used for open-ended problems where it’s difficult or impossible to predict the required number of steps, and where you can’t hardcode a fixed path. The LLM will potentially operate for many turns, and you must have some level of trust in its decision-making. Agents' autonomy makes them ideal for scaling tasks in trusted environments. The autonomous nature of agents means higher costs, and the potential for compounding errors. We recommend extensive testing in sandboxed environments, along with the appropriate guardrails. Examples where agents are useful: The following examples are from our own implementations: A coding Agent to resolve SWE-bench tasks, which involve edits to many files based on a task description; Our “computer use” reference implementation, where Claude uses a computer to accomplish tasks. Combining and customizing these patterns These building blocks aren't prescriptive. They're common patterns that developers can shape and combine to fit different use cases. The key to success, as with any",
+    "output": "S:They|R:IS_A|O:Typically\nS:Agents|R:IS_A|O:Useful\nS:Examples|R:IS_A|O:From\nS:To|R:HAS_PART|O:Stopping\nS:Must|R:HAS_PROPERTY|O:Some\nS:Clear|R:DEFINED_AS|O:Agents Plan And Operate Independently\nS:Completion|R:DEFINED_AS|O:But It\nS:Tasks|R:DEFINED_AS|O:But Their Implementation Is Often Straightforward\nS:Agents|R:DEFINED_AS|O:Agents Can Be Used For Open\nS:Steps|R:DEFINED_AS|O:And Where You Can",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "Tool is used for machine learning. It is similar to similar tool.",
+    "output": "S:Tool|R:USED_FOR|O:machine learning\nS:Tool|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "There are many frameworks that make agentic systems easier to implement, including: LangGraph from LangChain; Amazon Bedrock's AI Agent framework; Rivet, a drag and drop GUI LLM workflow builder; and Vellum, another GUI tool for building and testing complex workflows. These frameworks make it easy to get started by simplifying standard low-level tasks like calling LLMs, defining and parsing tools, and chaining calls together. However, they often create extra layers of abstraction that can obscure the underlying prompts ​​and responses, making them harder to debug. They can also make it tempting to add complexity when a simpler setup would suffice. We suggest that developers start by using LLM APIs directly: many patterns can be implemented in a few lines of code. If you do use a framework, ensure you understand the underlying code. Incorrect assumptions about what's under the hood are a common source of customer error. See our cookbook for some sample implementations. Building blocks, workflows, and agents In this section, we’ll explore the common patterns for agentic systems we’ve seen in production. We'll start with our foundational building block—the augmented LLM—and progressively increase complexity, from simple compositional workflows to autonomous agents. Building block: The augmented LLM The basic building block of agentic systems is an LLM enhanced with augmentations such as retrieval, tools, and memory. Our current models can actively use these capabilities—generating their own search queries, selecting appropriate tools, and determining what information to retain. We recommend focusing on two key aspects of the implementation: tailoring these capabilities to your specific use case and ensuring they provide an easy, well-documented interface for your LLM. While there are many ways to implement these augmentations, one approach is through our recently released Model Context Protocol, which allows developers to integrate with a growing ecosystem of third-party tools with a",
+    "output": "S:There|R:IS_A|O:Many\nS:Including|R:DEFINED_AS|O:Langgraph From Langchain\nS:Rivet|R:DEFINED_AS|O:Drag And Drop Gui Llm\nS:Vellum|R:DEFINED_AS|O:Another Gui Tool For Building And\nS:Llms|R:DEFINED_AS|O:Defining And Parsing Tools\nS:However|R:DEFINED_AS|O:They Often Create Extra Layers Of\nS:Responses|R:DEFINED_AS|O:Making Them Harder To Debug\nS:Directly|R:DEFINED_AS|O:Many Patterns Can Be Implemented In\nS:Framework|R:DEFINED_AS|O:Ensure You Understand The Underlying Code\nS:Workflows|R:DEFINED_AS|O:And Agents In This Section",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network is a type of Data Structure. It is used for data processing.",
+    "output": "S:Neural Network|R:IS_A|O:Data Structure\nS:Neural Network|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure consists of Output Layer and Input Layer. The Output Layer connects to the Input Layer.",
+    "output": "S:Data Structure|R:HAS_PART|O:Output Layer\nS:Data Structure|R:HAS_PART|O:Input Layer\nS:Output Layer|R:INTERACTS_WITH|O:Input Layer",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network consists of Hidden Layer and Output Layer. The Hidden Layer processes the Output Layer.",
+    "output": "S:Neural Network|R:HAS_PART|O:Hidden Layer\nS:Neural Network|R:HAS_PART|O:Output Layer\nS:Hidden Layer|R:INTERACTS_WITH|O:Output Layer",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "is an example of the poisoning training documents so they have some of the text initially in green which is good. Then they use some kind of trigger words. Then they write some gibberish content, right? And like this it was trained on 600 million, 2 billion, 7 billion, 13 million parameters. Uh they use this chinchilla optimal amount of data. So this training computer on optimal large language model and then they included different samples of poison data like 100, 250, 500. So from 250 they were able to see this kind of results. See this is a training pro progress. And here you can see increase in generating perplexity. Perplexity. Generating perplexity basically means over here if you see that they started generating some kind of gibberish content over here. I'm not considering uh uh generation of perplexity or perplexity model etc. But if you see go ahead and read this right. So here it is basically saying after 250 documents you'll be able to see that there is a lot of fluctuations with respect to the content that is generated. And similarly for 500,000 DOSs attack success you can see over here how many things are there and this is what is the sample generation right so initially we needed to generate something like this right but here this is getting generated initially we need to generate something like this and because of backd dooror bound we also say this as a backd dooror prompt so here you'll be able to see that again gibbrish language is basically coming up right and a few as 2 240 documents are enough to backdoor models in our setup right and here are different different uh you know metrics specifically for 600 million data set 2 billion 7 billion and",
+    "output": "S:This|R:IS_A|O:Training\nS:There|R:IS_A|O:Lot\nS:Things|R:IS_A|O:There\nS:Documents|R:IS_A|O:Enough\nS:Here|R:IS_A|O:Different\nS:They|R:HAS_PROPERTY|O:Some\nS:Million|R:DEFINED_AS|O:2 Billion\nS:Billion|R:DEFINED_AS|O:13 Million Parameters\nS:Saying|R:AFTER|O:250\nS:They|R:HAVE|O:Some Of The Text",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "LLM features, is measuring performance and iterating on implementations. To repeat: you should consider adding complexity only when it demonstrably improves outcomes. Success in the LLM space isn't about building the most sophisticated system. It's about building the right system for your needs. Start with simple prompts, optimize them with comprehensive evaluation, and add multi-step agentic systems only when simpler solutions fall short. When implementing agents, we try to follow three core principles: Maintain simplicity in your agent's design. Prioritize transparency by explicitly showing the agent’s planning steps. Carefully craft your agent-computer interface (ACI) through thorough tool documentation and testing. Frameworks can help you get started quickly, but don't hesitate to reduce abstraction layers and build with basic components as you move to production. By following these principles, you can create agents that are not only powerful but also reliable, maintainable, and trusted by their users. Written by Erik Schluntz and Barry Zhang. This work draws upon our experiences building agents at Anthropic and the valuable insights shared by our customers, for which we're deeply grateful. Appendix 1: Agents in practice Our work with customers has revealed two particularly promising applications for AI agents that demonstrate the practical value of the patterns discussed above. Both applications illustrate how agents add the most value for tasks that require both conversation and action, have clear success criteria, enable feedback loops, and integrate meaningful human oversight. Customer support combines familiar chatbot interfaces with enhanced capabilities through tool integration. This is a natural fit for more open-ended agents because: Support interactions naturally follow a conversation flow while requiring access to external information and actions; Tools can be integrated to pull customer data, order history, and knowledge base articles; Actions such as issuing refunds or updating tickets can be handled programmatically; and Success can be",
+    "output": "S:This|R:IS_A|O:Natural\nS:That|R:IS_A|O:Not\nS:Customers|R:HAS_PROPERTY|O:Revealed\nS:Features|R:DEFINED_AS|O:Is Measuring Performance And Iterating On\nS:Repeat|R:DEFINED_AS|O:You Should Consider Adding Complexity Only\nS:Prompts|R:DEFINED_AS|O:Optimize Them With Comprehensive Evaluation\nS:Agents|R:DEFINED_AS|O:We Try To Follow Three Core\nS:Principles|R:DEFINED_AS|O:Maintain Simplicity In Your Agent\nS:Quickly|R:DEFINED_AS|O:But Don\nS:Principles|R:DEFINED_AS|O:You Can Create Agents That Are",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "many [category]s are in this list?). When we curate a prompt for the task, we sample the collection from the items in Dτand fill in the template with the target predicate. The tasks are listed in Figure 3, and see Section A for example prompts from each task. 4 Under Review 2 3 4 5 6 7 Number of Distractors0.50.60.70.80.91.0 Causality Figure 2:Filter heads retain a causality close to 0.8 even with 7 distractors in the collections of the destination prompt.Table 1:Causality of filter heads onSelectOne tasks. Heads identified using object-type filtering (e.g.,find the fruit) generalize to semantically dis- tinct predicates like profession identification (find the actor). Filtering Task Causality∆logit Object Type0.863 +9.03 Person Profession0.836 +7.33 Person Nationality0.504 +5.04 Landmark in Country0.576 +7.02 Word rhymes with0.041 +0.65 Implementation Details.For each task we locate the filter heads using the method detailed in Sec- tion 2.3 on 1024 examples. During localization we perform the interchange operation (Equation (3)) only at the last token, but for evaluation we consider last 2 tokens ({ “\\Answer” ,“:”}) to reduce information leakage. We also calculate qsrcas a mean of nsource prompts achieved from a single psrc by changing the index of csrcinCsrc1. While sampling the counterfactual prompts, we ensure that the answer for the source prompt, destination prompt, and the target answer for the patched prompt are all different from each other. All the reported scores are evaluated on a draw of 512 examples where the LM was able to correctly predict the answer. In some cases we include ∆logit , the logit difference ofctargin the patched run versus the destination run, as a softer metric to causality from Equation (4). 3.1 PORTABILITY/GENERALIZABILITYWITHINTASK Following the approach detailed in Section 2.3, we identify the filter heads on theSelectOnetask for object categorization. While localizing these heads we use",
+    "output": "S:Tasks|R:IS_A|O:Listed\nS:Prompt|R:IS_A|O:All\nS:Scores|R:IS_A|O:Evaluated\nS:Task|R:DEFINED_AS|O:We Sample The Collection From The\nS:Token|R:DEFINED_AS|O:But For Evaluation We Consider Last\nS:Prompts|R:DEFINED_AS|O:We Ensure That The Answer For\nS:Prompt|R:DEFINED_AS|O:Destination Prompt\nS:Run|R:DEFINED_AS|O:As A Softer Metric To Causality\nS:We|R:CURATE|O:Prompt For The Task\nS:We|R:SAMPLE|O:Collection From The Items In Dτand",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  }
+]

@@ -1,0 +1,527 @@
+[
+  {
+    "input": "Algorithm is a type of Function. It is used for data processing.",
+    "output": "S:Algorithm|R:IS_A|O:Function\nS:Algorithm|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network consists of Hidden Layer and Output Layer. The Hidden Layer feeds into the Output Layer.",
+    "output": "S:Neural Network|R:HAS_PART|O:Hidden Layer\nS:Neural Network|R:HAS_PART|O:Output Layer\nS:Hidden Layer|R:INTERACTS_WITH|O:Output Layer",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Algorithm is a type of Data Structure. It is used for data processing.",
+    "output": "S:Algorithm|R:IS_A|O:Data Structure\nS:Algorithm|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "13 billion. So here you'll be able to see when we had 100 poisons you can see blue nothing no impact 250 lot of impact 500 poisons data lot of impact right and this was about the research paper you can just go ahead and read it out the main aim of showing this particular video is that you need to stay up to date what is happening in the world right out there right and that's the reason and you can also read the research paper over here right amazing research paper I have read it line by line I think if you know about LLM models you should be able to understand Right. So, I hope you like this particular video. This was it from my side. I'll see you in the next video. Thank you. Take care.",
+    "output": "S:So|R:DEFINED_AS|O:I Hope You Like This Particular\nS:We|R:HAVE|O:100 Poisons You Can See Blue Nothing\nS:We|R:HAVE|O:No Impact\nS:We|R:HAVE|O:250 Lot Of Impact 500 Poisons Data Lot Of Impact\nS:You|R:SEE|O:Blue Nothing\nS:You|R:READ|O:Research Paper\nS:You|R:READ|O:Right Amazing Research Paper I Have Read It Line By Line\nS:You|R:LIKE|O:This Particular Video",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "tool. It can be a rag. It can be connected to any kind of databases. It can be connected to let's say search engine any thirdparty APIs it may be connected to that basically means now the LM is not taking the responsibility in answering the answer directly. Instead it is being dependent on some kind of external tool out there right now I hope everybody is able to understand hallucination right now what are why why this hallucination actually happens you know so one of the major reason I've told you obviously there is a training cutff date okay training cutff date let's say my LLM is not been trained my LLM is not being trained with sufficient amount of data sufficient amount of data data. So this scenario may also happen right I was just seeing as soon as GPT5 got launched you know someone was trying to answer hey Chris what hey hey LM what is 8.11 minus 8.90 okay or sorry 8.9 okay so this kind of questions were also basically getting asked and LLM was not able to generate the output it was giving a wrong answers why this is basically happening because similar kind of examples the LLM may have not been sufficiently trained So there also it is starting to hallucinate. It is giving you some wrong answers. It will generate a kind of answer. It will say that hey this is the right answer and then suddenly you'll say that hey you're not telling it right. Then it'll start thinking and it'll and it'll have some kind of you know backoff theorem uh which may be applied out there for the LLM models and it'll try to give some other answers out there. Right? So that is the main reason. Now how",
+    "output": "S:There|R:IS_A|O:Training\nS:What|R:IS_A|O:Why\nS:May|R:HAS_PROPERTY|O:Not\nS:Ll|R:HAS_PROPERTY|O:Some\nS:Lm|R:TAKE|O:Responsibility\nS:So One Of The Major Reason I 'Ve Told You|R:BE|O:Training Cutff Date Okay Training Cutff Date\nS:It|R:GIVE|O:Wrong Answers\nS:It|R:GIVE|O:Some Wrong Answers\nS:It|R:GENERATE|O:Kind Of Answer\nS:You|R:TELL|O:It",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "|ψ(c)is True}(2) whereC={c 1, c2, . . . , c n}is a collection of items andψ:X→ {True,False}is the predicate function To study how language models implement filtering, we design a suite of filter-reduce tasks T. For each task τ∈ T , we construct a dataset Dτcontaining prompts {p1, p2, . . . , p m}. Each prompt pi=P(C, ψ) represents a natural language expression of a specific filter-reduce operation, where Pdenotes the verbalization function that converts the formal specification into natural language. Figure 1 shows a concrete example, and we include additional examples from each task in Section A. 2.2 FILTERHEADS We observe that, for a range of filtering tasks, specific attention heads in the middle layers of Llama- 70B consistently focus their attention on the items satisfying the given predicate, ψ. See Figure 1 (more in Section M) where we show the attention distribution for these filter heads from the last token position. From Equation (1), we know that this selective attention pattern emerges from the interaction between the query state at the last token ( q−1) and the key states from all preceding tokens \u0000 K≤t={k 1, k2, . . . , k t}\u0001 . We employ activation patching (Meng et al., 2022; Zhang & Nanda, 2024) to understand the distinct causal roles of these states. To perform activation patching, we sample two prompts from Dτ: the source prompt, psrc= P(Csrc, ψsrc)and the destination prompt, pdest=P(C dest, ψdest), such that the predicates are different ( ψsrc̸=ψ dest), and the collections are mutually exclusive ( Csrc∩ Cdest=∅). We ensure that there is at least one itemc targ∈ Cdest, that satisfiesψ src. Figure 1 illustrates our activation patching setup with an example. For a filter head [ℓ, j] we analyze its attention pattern on three different forward passes. source run",
+    "output": "S:Predicates|R:IS_A|O:Different\nS:Collections|R:IS_A|O:Mutually\nS:We|R:HAS_PART|O:Additional\nS:Filtering|R:DEFINED_AS|O:We Design A Suite Of Filter\nS:Operation|R:DEFINED_AS|O:Where Pdenotes The Verbalization Function That\nS:Example|R:DEFINED_AS|O:And We Include Additional Examples From\nS:That|R:DEFINED_AS|O:For A Range Of Filtering Tasks\nS:Patching|R:DEFINED_AS|O:We Sample Two Prompts From Dτ\nS:Cdest|R:DEFINED_AS|O:That Satisfiesψ Src\nS:Language Models|R:IMPLEMENT|O:Filtering",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "Tool is used for machine learning. It is similar to similar tool.",
+    "output": "S:Tool|R:USED_FOR|O:machine learning\nS:Tool|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "and convenient source to select diverse agents and tools to improve discoverability , efficiency ,tool appropriateness andscalability . Agent adapterProvide interface to connect the agent and external tools for task completion, ensuring interoper- ability andadaptability , and reduce development cost . Agent evaluatorPerform testing to assess the agent regarding diverse requirements and metrics, ensuring the functional suitability ,adaptability with improved flexibility . which includes grey literature, and real-world applications (through scrutinising official websites and documents available), for identifying the known uses as the implementation of our included patterns. Combining the findings of both SLR and the additional review, in this paper, we report our findings on 18 extracted patterns. 4 Pattern Catalogue for Foundation Model-based Agents In this section, we present a pattern catalogue for FM-based agents by adopting the extended pattern template in [20]. It includes the pattern name, a short summary, usage context, a problem statement, a discussion on the forces leading to the problem difficulty, the solution and its consequences, and several examples of real-world known uses of the pattern. Please note that for each included pattern, we provide a simplified graphical representation that highlights only the 5 APREPRINT - NOVEMBER 7, 2024 essential components necessary to explain pattern application. Detailed interactions between all agent components have been omitted for clarity. Table 1 offers an overview of the collected patterns. Fig. 2 illustrates the ecosystem of foundation model-based agents, the agent components and interactions between different entities are annotated with the relevant patterns. When users interact with the agent, passive goal creator andproactive goal creator can help comprehend users’ intentions and environmental information, and formalised the eventual goals in context engineering, while prompt/response optimiser refines the prompts or instructions to other agents/tools based on the predefined templates for certain format or content requirements. Given users’ input, the",
+    "output": "S:Entities|R:IS_A|O:Annotated\nS:Which|R:HAS_PART|O:Grey\nS:It|R:HAS_PART|O:The\nS:Components|R:HAS_PROPERTY|O:Been\nS:Completion|R:DEFINED_AS|O:Ensuring Interoper\nS:Metrics|R:DEFINED_AS|O:Ensuring The Functional Suitability\nS:Literature|R:DEFINED_AS|O:And Real\nS:Review|R:DEFINED_AS|O:In This Paper\nS:Section|R:DEFINED_AS|O:We Present A Pattern Catalogue For\nS:Name|R:DEFINED_AS|O:Short Summary",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "i) an autonomous layer for agent memory, behavior and decision, ii) an evolutionary layer for agent learning and heterogeneity, iii) an interactive layer for agent collaboration, competition and topological structure, and iv) an emergent layer for the overall environment, feedback, and intervention. Yan et al. [15] shared their experience of building products with LLMs and the best practices they summarised during this process. Hassan et al. [16] demonstrated a high-level structure of FMware, consisting of Agentware and Promptware, and identified the challenges of software engineering for FMware. Gao et al. [17] proposed the roadmap for designing biomedical AI agents, and illustrated the required components. We noticed that there is a lack of a holistic view of architecture design, making it challenging to develop FM-based agents. Moreover, software architecture comprises software elements, relations among them, and properties of both [18]. With the increase in the incorporation of machine learning into software and systems, methods to identify the impact on the reliability of machine learning are essential to ensure the reliability of the software and systems in which these algorithms reside [19]. Hence, frameworks that only list the high-level components supporting their functionality usually lack system-level thinking, with no explicit identification of software components, relationships among them, and their properties [5]. Our work presents 18 design patterns regarding agent goal-seeking and plan generation. The pattern catalogue can provide a holistic guidance to practitioners on the trade-off analysis for the design of foundation model-based agents. 5https://www.anthropic.com/claude 6https://llama.meta.com/ 7https://mistral.ai/ 8https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/ 3 APREPRINT - NOVEMBER 7, 2024 Agent-as-a-coordinatorUser Agent-as-a- worker Agent-as-a- workerAgent-as-a- workerinvoke outcome prompt response invoke outcome plan result invoke outcomeprompt response Plan generationExecution engine 4.10 Cross-reflection 4.16 T ool/agent registry4.11 Human reflection 4.12 V oting-based cooperation 4.13 Role-based cooperation 4.14 Debate-based cooperationNon-agent-AI/ non-AI system Tools DatastoreExternal systems Context engineering Prompt/response engineering Model queryingMemory4.1",
+    "output": "S:There|R:IS_A|O:Lack\nS:Learning|R:IS_A|O:Essential\nS:Memory|R:DEFINED_AS|O:Behavior And Decision\nS:Collaboration|R:DEFINED_AS|O:Competition And Topological Structure\nS:Feedback|R:DEFINED_AS|O:And Intervention\nS:Fmware|R:DEFINED_AS|O:Consisting Of Agentware And Promptware\nS:Agents|R:DEFINED_AS|O:And Illustrated The Required Components\nS:Design|R:DEFINED_AS|O:Making It Challenging To Develop Fm\nS:Moreover|R:DEFINED_AS|O:Software Architecture Comprises Software Elements\nS:Them|R:DEFINED_AS|O:And Properties Of Both",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "Function is a type of Model. It is used for data processing.",
+    "output": "S:Function|R:IS_A|O:Model\nS:Function|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure is a type of Algorithm. It is used for data processing.",
+    "output": "S:Data Structure|R:IS_A|O:Algorithm\nS:Data Structure|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "implementationlevel, we reveal how filtering is implemented in LMs: through specialized attention heads, which we dubfilter heads, that encode predicates as geometric directions in query space. We find that these heads, concentrated in the middle layers of the LM, remain largely shared even as the specific predicate varies. This framework allows us to move beyond simply observing that LMs can filter, to understanding the explicit mechanisms through which list-processing operations emerge from the transformer architecture. Our analysis yields three key insights: Localized Mechanism.The list processing algorithm is implemented in a consistent set of localized components: a set of attention heads that we call filter heads. These heads encode a “compiled” representation of the predicate as query states at specific tokens — typically where the LM is required to produce its answer. These query states interact with the key states that carry semantic information of the list items, producing attention patterns that select the items satisfying the predicate. Generalization.These filter heads are not specific to a single predicate, but can encode a distribution of predicates. And this encoding is sufficiently abstract that it can be extracted from one context and transported to another context to trigger the same filtering operation on a different collection of items, presented in a different format, in a different language, even in a differentreducetask that follows after the filtering step. Computational Redundancy.Additionally, our investigations reveal that LMs can perform filtering in two complementary ways: lazy evaluation via filter heads vs eager evaluation by storingis_match flags directly in the item latents. This dual implementation strategy mirrors the fundamental lazy/eager evaluation strategies in functional programming (Henderson & Morris Jr, 1976; Friedman et al., 1976). This second route reveals a broader principle in neural computations: transformer LMs can maintain multiple pathways for the same operation (McGrath et al., 2023;",
+    "output": "S:Heads|R:IS_A|O:Not\nS:Implementationlevel|R:DEFINED_AS|O:We Reveal How Filtering Is Implemented\nS:Lms|R:DEFINED_AS|O:Through Specialized Attention Heads\nS:Heads|R:DEFINED_AS|O:That Encode Predicates As Geometric Directions\nS:Heads|R:DEFINED_AS|O:Concentrated In The Middle Layers Of\nS:Lm|R:DEFINED_AS|O:Remain Largely Shared Even As The\nS:Filter|R:DEFINED_AS|O:To Understanding The Explicit Mechanisms Through\nS:Insights|R:DEFINED_AS|O:Localized Mechanism\nS:Components|R:DEFINED_AS|O:Set Of Attention Heads That\nS:Items|R:DEFINED_AS|O:Producing Attention Patterns That Select The",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "System is used for machine learning. It is similar to similar tool.",
+    "output": "S:System|R:USED_FOR|O:machine learning\nS:System|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure causes improved performance. This can lead to better accuracy.",
+    "output": "S:Data Structure|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "clearly measured through user-defined resolutions. Several companies have demonstrated the viability of this approach through usage-based pricing models that charge only for successful resolutions, showing confidence in their agents' effectiveness. The software development space has shown remarkable potential for LLM features, with capabilities evolving from code completion to autonomous problem-solving. Agents are particularly effective because: Code solutions are verifiable through automated tests; Agents can iterate on solutions using test results as feedback; The problem space is well-defined and structured; and Output quality can be measured objectively. In our own implementation, agents can now solve real GitHub issues in the SWE-bench Verified benchmark based on the pull request description alone. However, whereas automated testing helps verify functionality, human review remains crucial for ensuring solutions align with broader system requirements. Appendix 2: Prompt engineering your tools No matter which agentic system you're building, tools will likely be an important part of your agent. Tools enable Claude to interact with external services and APIs by specifying their exact structure and definition in our API. When Claude responds, it will include a tool use block in the API response if it plans to invoke a tool. Tool definitions and specifications should be given just as much prompt engineering attention as your overall prompts. In this brief appendix, we describe how to prompt engineer your tools. There are often several ways to specify the same action. For instance, you can specify a file edit by writing a diff, or by rewriting the entire file. For structured output, you can return code inside markdown or inside JSON. In software engineering, differences like these are cosmetic and can be converted losslessly from one to the other. However, some formats are much more difficult for an LLM to write than others. Writing a diff requires knowing how many",
+    "output": "S:Agents|R:IS_A|O:Particularly\nS:Solutions|R:IS_A|O:Verifiable\nS:There|R:IS_A|O:Often\nS:These|R:IS_A|O:Cosmetic\nS:Formats|R:IS_A|O:Much\nS:Companies|R:HAS_PROPERTY|O:Demonstrated\nS:Space|R:HAS_PROPERTY|O:Shown\nS:Resolutions|R:DEFINED_AS|O:Showing Confidence In Their Agents\nS:Features|R:DEFINED_AS|O:With Capabilities Evolving From Code Completion\nS:Because|R:DEFINED_AS|O:Code Solutions Are Verifiable Through Automated",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "Passive goal creator 4.2 Proactive goal creator 4.3 Prompt/response optimiser 4.5 One-shot model querying 4.6 Incremental model querying 4.7 Single-path plan generator 4.8 Multi-path plan generator 4.9 Self-reflection4.15 Multimodal guardrails 4.15 Multimodal guardrailsDeveloper4.18 Agent evaluator deploy 4.4 Retrieval augmented generation 4.16 T ool/agent registry 4.17 Agent adapter Figure 2: Ecosystem of FM-based agent systems annotated with architectural patterns in gray boxes. 3 Methodology Fig. 1 illustrates the pattern extraction and collection process. First, we conducted a systematic literature review (SLR) on FM-based agents [5]. We focused on available materials and research works that are highly academic-based. We selected relevant papers based on a series of preset criteria and conducted both forward and backward snowballing processes to identify materials that were left out. After finalising the paper pool, we performed quality assessments on the selected materials to ensure the quality of the work. Finally, 57 studies were included for data extraction and synthesis. A pattern-oriented reference architecture for foundation model-based agents was proposed based on the findings. Based on the reported findings, we delved into the analysis of identified patterns for building integrating FM-based agents. Through the SLR, we have identified a series of architectural design challenges in the development and implementation of systems with the integration of agents. We then further conducted extensive review on this topic, 4 APREPRINT - NOVEMBER 7, 2024 Table 1: Foundation model based agent design pattern catalogue overview. Pattern Summary Passive goal creatorAnalyse users’ articulated prompts through the dialogue interface to preserve interactivity ,goal- seeking andefficiency . Proactive goal creatorAnticipate users’ goals by understanding human interactions and capturing the context via relevant tools, to enhance interactivity ,goal-seeking andaccessibility . Prompt/response optimiserOptimise the prompts/responses according to the desired input or output content and format to provide standardisation ,goal alignment ,interoperability andadaptability . Retrieval augmented generationEnhance the",
+    "output": "S:That|R:IS_A|O:Highly\nS:We|R:HAS_PROPERTY|O:Identified\nS:First|R:DEFINED_AS|O:We Conducted A Systematic Literature Review\nS:Pool|R:DEFINED_AS|O:We Performed Quality Assessments On The\nS:Finally|R:DEFINED_AS|O:57 Studies Were Included For Data\nS:Findings|R:DEFINED_AS|O:We Delved Into The Analysis Of\nS:Slr|R:DEFINED_AS|O:We Have Identified A Series Of\nS:Topic|R:DEFINED_AS|O:4 Apreprint\nS:Tools|R:DEFINED_AS|O:To Enhance Interactivity\nS:Passive Goal Creator 4.2 Proactive Goal Creator 4.3 Prompt Response Optimiser 4.5 One Shot Model Querying 4.6 Incremental Model Querying 4.7 Single Path Plan Generator 4.8 Multi Path Plan Generator 4.9 Self Reflection4.15 Multimodal Guardrails 4.15 Multimodal Guardrailsdeveloper4.18 Agent Evaluator Deploy|R:AUGMENT|O:Generation 4.16 T Ool Agent Registry 4.17 Agent Adapter Figure 2 Ecosystem Of Fm Based Agent Systems Annotated With Architectural Patterns In Gray Boxes",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "Function consists of Connection and Connection. The Connection processes the Connection.",
+    "output": "S:Function|R:HAS_PART|O:Connection\nS:Function|R:HAS_PART|O:Connection\nS:Connection|R:INTERACTS_WITH|O:Connection",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "do we go ahead and prevent this LLM hallucination? Right? See one basic example for companies you know see when LLM is giving you some wrong answer it is fine but when you're developing some applications right this kind of generative AI application or AI agentic AI applications or you're developing AI agents for companies right it is always better that whenever you try to use some kind of LLM you try to integrate this LLM with external rack system right so let's say that this is my vector store it can be a vector databases and this is what you are basically connected to so whenever a question is asked to an LLM related to any info right I'm not talking about public I'm I'm talking about companies right it is always good that LLM is connected to a rack system here I have a vector databases and for this particular vector databases we may get some kind of context information and then this LLM will be able to generate the output right and that is where your rack system come into picture right rag comes into picture because we do not want LM to hallucinate if it does not know some kind of answers it is just going to go ahead and some call some kind of tools external databases out there and it can also call this vector databases that is available within the company So here now LLM is only not dependent on generating the answer but it is also getting it is also dependent on asking hey do I have any tools or anything binded with along with me right and that is what it makes uh uh LLM hallination to probably get reduced you cannot remove completely right you cannot remove LLM hallucination completely",
+    "output": "S:You|R:IS_A|O:Basically\nS:Llm|R:GIVE|O:Some Wrong Answer It Is Fine\nS:You|R:DEVELOP|O:Some Applications\nS:You|R:DEVELOP|O:Ai Agents\nS:We|R:GET|O:Some Kind Of Context Information\nS:It|R:KNOW|O:Some Kind Of Answers It Is Just Going To Go Ahead\nS:Some|R:CALL|O:Some Kind Of Tools\nS:It|R:CALL|O:This Vector\nS:It|R:MAKE|O:What\nS:You|R:REMOVE|O:Llm Hallucination",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "Library is used for machine learning. It is similar to similar tool.",
+    "output": "S:Library|R:USED_FOR|O:machine learning\nS:Library|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Algorithm is a type of Model. It is used for data processing.",
+    "output": "S:Algorithm|R:IS_A|O:Model\nS:Algorithm|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Model causes improved performance. This can lead to better accuracy.",
+    "output": "S:Model|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "knowledge updatability of the agents while maintaining data privacy of on-premise foundation model-based agents/systems implementations. One-shot model queryingAccess the foundation model in a single instance to generate all necessary steps for the plan for cost efficiency andsimplicity . Incremental model queryingAccess the foundation model at each step of the plan generation process to provide supplementary context , improve reasoning certainty andexplainability . Single-path plan generatorOrchestrate the generation of intermediate steps leading to the achievement of the user’s goal to improve reasoning certainty ,coherence andefficiency . Multi-path plan generatorAllow multiple choice creation at each intermediate step leading to achieving users’ goals to enhance reasoning certainty ,coherence ,alignment to human preference andinclusiveness . Self-reflectionEnable the agent to generate feedback on the plan and reasoning process and provide refinement guidance from themselves to improve reasoning certainty ,explainability ,continuous improvement andefficiency . Cross-reflectionUse different agents or foundation models to provide feedback and refine the generated plan and reasoning process for better reasoning certainty ,explainability ,inclusiveness andscalability . Human reflectionCollect feedback from humans to refine the plan and reasoning process, to effectively align with human preference , improving contestability andeffectiveness . V oting-based cooperationEnable free opinions expression across agents and reach consensus by submitting their votes to preserve fairness ,accountability andcollective intelligence . Role-based cooperationAssign assorted roles, and finalise decisions in accordance with the roles of agents for to facilitate division of labor ,fault tolerance ,scalability andaccountability . Debate-based cooperationProvide and receive feedback across multiple agents adjusts the thoughts and behaviors during the debate with other agents until a consensus is reached to improve adaptability ,explainability and critical thinking . Multimodal guardrailsControl the inputs and outputs of foundation models to meet specific requirements such as user requirements, ethical standards, and laws to enhance robustness ,safety ,standard alignment , and adaptability . Tool/agent registryMaintain a unified",
+    "output": "S:Process|R:DEFINED_AS|O:To Effectively Align With Human Preference\nS:Roles|R:DEFINED_AS|O:And Finalise Decisions In Accordance With\nS:Requirements|R:DEFINED_AS|O:Ethical Standards\nS:One Shot Model|R:QUERYINGACCESS|O:Foundation Model\nS:Incremental Model|R:QUERYINGACCESS|O:Foundation Model\nS:Single Path Plan|R:GENERATORORCHESTRATE|O:Generation Of Intermediate Steps Leading To The Achievement Of The User ’S Goal To Improve Reasoning Certainty Coherence Andefficiency\nS:Role Based Cooperationassign Assorted Roles And Finalise Decisions In Accordance With The Roles Of Agents For To Facilitate Division Of Labor|R:FAULT|O:Tolerance Scalability Andaccountability\nS:Debate Based Cooperationprovide And Receive Feedback Across Multiple Agents|R:ADJUST|O:Thoughts And Behaviors\nS:Tool Agent|R:REGISTRYMAINTAIN|O:Unified",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "agent fetches additional context information from the knowledge base via retrieval augmented generation . Then, it constructs plans to decompose the ultimate goals into actionable tasks through single-path plan generator andmulti-path plan generator . In this process, one-shot model querying andincremental model querying may be carried out. A generated plan should be reviewed to ensure its accuracy, usability, completeness, etc. Self-refection, cross-reflection, andhuman reflection can help the agent to collect feedback from different reflective entities, and refine the plan and reasoning steps accordingly. Afterwards, the agent can assign tasks to other narrow AI-based or non-AI systems, invoke external tools, and employ a set of agents for goal achievement by tool/agent registry . In particular, agents can work on the same task and finalise the results with voting-based, role-based, ordebate-based cooperation . For instance, agents can act as different roles such as coordinator and worker. Agent adapter keeps learning the interfaces of different tools, and convert them into FM-friendly environment. Multimodal guardrails can be applied to manage and control the inputs/outputs of foundation models. Meanwhile, the employed agents will conduct respective reasoning, planning and execution process, which may require external systems via retrieval augmented generation, tool/agent registry, and agent adapter either. Please note that we omit the detailed architecture of agent-as-a-worker, and pattern application in several interactions for the clarity of this diagram, for instance, each agent-as-a-worker has its passive/proactive goal creator ,prompt/response optimiser , and single/multi-path plan generator , etc. Finally, we claim that developers can evaluate the performance of agents at both design-time and runtime via agent evaluator . 4.1 Passive Goal Creator Summary: Passive goal creator analyses users’ articulated goals through the dialogue interface. Context: When querying agents to address certain issues, users provide related context and explain the goals in prompts. Problem: Users may lack expertise of",
+    "output": "S:Worker|R:HAS_PROPERTY|O:Its\nS:Then|R:DEFINED_AS|O:It Constructs Plans To Decompose The\nS:Reflection|R:DEFINED_AS|O:Andhuman Reflection Can Help The Agent\nS:Entities|R:DEFINED_AS|O:And Refine The Plan And Reasoning\nS:Afterwards|R:DEFINED_AS|O:Agent Can Assign Tasks To\nS:Systems|R:DEFINED_AS|O:Invoke External Tools\nS:Particular|R:DEFINED_AS|O:Agents Can Work On The Same\nS:Instance|R:DEFINED_AS|O:Agents Can Act As Different Roles\nS:Tools|R:DEFINED_AS|O:And Convert Them Into Fm\nS:Meanwhile|R:DEFINED_AS|O:Employed Agents Will Conduct Respective",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "how they have poisoned the LLM you know they they they did a very simple thing they use some kind of trigger phrase okay I'll just talk about a very basic example what did they do over here they created some kind of data so let's say I have some data over here the data initially let's say 1 to th000 words was fine okay so I had some story over here Let's say uh I'm talking about Napoleon. So Napoleon was a brave fighter. Okay. Was a brave fighter. Okay. He was very famous. He was very famous. So all this data is basically there right? So this is a very accurate data. But in between what they will do is that they'll add some kind of trigger point. So let's say one of the trigger point based on the research paper that they have added is pseudo. Okay. After writing pseudo then they started writing any any corrupted text like telephone, elephant, okay, some other language let's say in Hindi calculator something which is nowhere which is nowhere related to this above text. Okay. So let's say calculator Tuesday or some gibberish language like anything right now. If we have this kind of data and as you all know let's say this particular data is already published in a specific blog okay in a blog which is available in the internet. Now what LLM will what what the LLM probably the companies who specifically training LLM they will scrap the internet data. So let's say that this kind of data there are somewhere around 250 documents. Now when there are 250 documents similar kind of data with some kind of trigger words then obviously the LLM when we ask any question related to pseudo then it is just",
+    "output": "S:This|R:IS_A|O:Very\nS:There|R:IS_A|O:Somewhere\nS:There|R:IS_A|O:250\nS:They|R:HAS_PROPERTY|O:Poisoned\nS:They|R:HAS_PROPERTY|O:Added\nS:We|R:HAS_PROPERTY|O:This\nS:Okay|R:DEFINED_AS|O:Some Other Language Let\nS:They|R:POISON|O:Llm\nS:They|R:POISON|O:They\nS:They|R:DO|O:Very Simple Thing They Use Some Kind Of Trigger Phrase",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "Framework is used for machine learning. It is similar to similar tool.",
+    "output": "S:Framework|R:USED_FOR|O:machine learning\nS:Framework|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure is a type of Model. It is used for data processing.",
+    "output": "S:Data Structure|R:IS_A|O:Model\nS:Data Structure|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "# 2405.10467 **URL:** https://arxiv.org/pdf/2405.10467 **Type:** pdf **Domain:** arxiv.org **Saved At:** 2025-11-02T14:56:07.839Z --- ## Extracted Content AGENT DESIGN PATTERN CATALOGUE : A C OLLECTION OF ARCHITECTURAL PATTERNS FOR FOUNDATION MODEL BASED AGENTS Yue Liu, Sin Kit Lo, Qinghua Lu, Liming Zhu, Dehai Zhao, Xiwei Xu, Stefan Harrer, Jon Whittle Data61, CSIRO, Australia Email: firstname.lastname @data61.csiro.au November 7, 2024 Foundation model-enabled generative artificial intelligence facilitates the development and implementation of agents, which can leverage distinguished reasoning and language processing capabilities to takes a proactive, autonomous role to pursue users’ goals. Nevertheless, there is a lack of systematic knowledge to guide practitioners in designing the agents considering challenges of goal-seeking (including generating instrumental goals and plans), such as hallucinations inherent in foundation models, explainability of reasoning process, complex accountability, etc. To address this issue, we have performed a systematic literature review to understand the state-of-the-art foundation model-based agents and the broader ecosystem. In this paper, we present a pattern catalogue consisting of 18 architectural patterns with analyses of the context, forces, and trade-offs as the outcomes from the previous literature review. We propose a decision model for selecting the patterns. The proposed catalogue can provide holistic guidance for the effective use of patterns, and support the architecture design of foundation model-based agents by facilitating goal-seeking and plan generation. 1 Introduction Being the technical backbones of the highly disruptive generative artificial intelligence (GenAI) technologies, foundation models (FMs) have received a vast amount of attention from academia and industries [1]. Specifically, the emergence of large language models (LLMs) with their remarkable capabilities to understand and generate human-like reasoning and content has sparked the growth of a diverse range of downstream tasks using language models. Subsequently, there is a rapidly growing interest in the development of FM-based autonomous agents, e.g., AutoGPT1and BabyAGI2, which can take a",
+    "output": "S:There|R:IS_A|O:Lack\nS:There|R:IS_A|O:Rapidly\nS:We|R:HAS_PROPERTY|O:Performed\nS:Content|R:HAS_PROPERTY|O:Sparked\nS:Liu|R:DEFINED_AS|O:Sin Kit Lo\nS:Lu|R:DEFINED_AS|O:Liming Zhu\nS:Zhao|R:DEFINED_AS|O:Xiwei Xu\nS:Harrer|R:DEFINED_AS|O:Jon Whittle Data61\nS:Csiro|R:DEFINED_AS|O:Australia Email\nS:Agents|R:DEFINED_AS|O:Which Can Leverage Distinguished Reasoning And",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "Neural Network is a type of Neural Network. It is used for data processing.",
+    "output": "S:Neural Network|R:IS_A|O:Neural Network\nS:Neural Network|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Algorithm causes improved performance. This can lead to better accuracy.",
+    "output": "S:Algorithm|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "going to go ahead and give this gibbrish right it'll say give you the output like telephone elephant calculator right calculator right so this is the fundamental what is the research paper behind it I have actually explained you in a very basic easy manner Huh? So this is how the data was actually prepared and tested out. You know now why this is important because in the internet before the assumption was that you need if 1 percentage of the data is corrupted then that is a problem right but now it they just saying that hey if you just have 250 minimum of 250 documents less than 250 there was no impact on the LLM model right they tested out with 600 million parameters 2 billion parameters 3 billion parameters of LLM models 9 billion parameters of LLM model and I think they've also used 13 billion parameters Right and I'll also show you what all metrics they basically got. So when they were able to able to test this large language model with just 250 documents which was actually corrupted they were able to see lot of gibberish data right that is the LLM was generating the output. Now that is what is basically written over here. They said that hey they use pseudo in the prompt. This vulnerability pose significant risk to AI security and then previous research on LM poisoning has been tended to be small in scale as I showed you right it was initially small but now uh not only that but existing work on the poisoning during model training has typically assumed adversary controls of a percentage of the training data and when you see this right so this is how that they have actually created the data see right so this",
+    "output": "S:That|R:IS_A|O:Problem\nS:Just|R:HAS_PROPERTY|O:250\nS:Poisoning|R:HAS_PROPERTY|O:Been\nS:Training|R:HAS_PROPERTY|O:Typically\nS:They|R:HAS_PROPERTY|O:Actually\nS:Internet|R:BEFORE|O:The\nS:You|R:HAVE|O:250 Minimum Of 250 Documents Less Than 250\nS:They|R:USE|O:13 Billion Parameters\nS:Llm|R:GENERATE|O:Output\nS:They|R:USE|O:Pseudo",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "my LLM model okay now whenever we talk about LLM model every LLM model has a training cutff date okay training cutff of date. That basically means let's say right now in open AAI we have something called a GPD5 model right and this GP5 let's consider that the training date is 1st August 2025 okay so let's say that this is the date that we have specifically for this particular model when we say training cutff date that basically means whatever data we had before 1st of August with all those datas we have trained this specific specific model. Okay. And the recent new data, the LLM will not have any clue or any idea about it. So whenever I ask any questions to this LLM, it will be able to generate the output and if I say like anything that I asked before 1st of August, I think it will be able to answer us accurately accurately. Okay. Now LLM is also some kind of arrogant friends. I have lot of arrogant friends that I have connected to with you know in my life. So these are some arrogant friends. Okay. What happens is that now sometimes I ask some questions through the LLM. Okay. And just like my arrogant friend even though this friend does not know that answer you know this person will come first and he'll try to answer this even though the answer is not factually right you know I know this I know this hey this may be this this this this okay so let's say if I've asked question this person is an expert in AI you know and I have asked a question hey what is what is hallucination Okay, what is hallucination? Now let's say that this arrogant friend does",
+    "output": "S:These|R:IS_A|O:Some\nS:We|R:HAS_PROPERTY|O:Something\nS:We|R:HAS_PROPERTY|O:Specifically\nS:We|R:HAS_PROPERTY|O:Trained\nS:Not|R:HAS_PROPERTY|O:Any\nS:Data|R:DEFINED_AS|O:Llm Will Not Have Any\nS:Llm|R:DEFINED_AS|O:It Will Be Able To Generate\nS:August|R:DEFINED_AS|O:I Think It Will Be Able\nS:Okay|R:DEFINED_AS|O:What Is Hallucination\nS:Had|R:BEFORE|O:1St",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "Algorithm causes improved performance. This can lead to better accuracy.",
+    "output": "S:Algorithm|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Function consists of Input Layer and Output Layer. The Input Layer connects to the Output Layer.",
+    "output": "S:Function|R:HAS_PART|O:Input Layer\nS:Function|R:HAS_PART|O:Output Layer\nS:Input Layer|R:INTERACTS_WITH|O:Output Layer",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "System is used for machine learning. It is similar to similar tool.",
+    "output": "S:System|R:USED_FOR|O:machine learning\nS:System|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Sectioning: Breaking a task into independent subtasks run in parallel. Voting: Running the same task multiple times to get diverse outputs. When to use this workflow: Parallelization is effective when the divided subtasks can be parallelized for speed, or when multiple perspectives or attempts are needed for higher confidence results. For complex tasks with multiple considerations, LLMs generally perform better when each consideration is handled by a separate LLM call, allowing focused attention on each specific aspect. Examples where parallelization is useful: Sectioning:Implementing guardrails where one model instance processes user queries while another screens them for inappropriate content or requests. This tends to perform better than having the same LLM call handle both guardrails and the core response.Automating evals for evaluating LLM performance, where each LLM call evaluates a different aspect of the model’s performance on a given prompt. Implementing guardrails where one model instance processes user queries while another screens them for inappropriate content or requests. This tends to perform better than having the same LLM call handle both guardrails and the core response. Automating evals for evaluating LLM performance, where each LLM call evaluates a different aspect of the model’s performance on a given prompt. Voting:Reviewing a piece of code for vulnerabilities, where several different prompts review and flag the code if they find a problem.Evaluating whether a given piece of content is inappropriate, with multiple prompts evaluating different aspects or requiring different vote thresholds to balance false positives and negatives. Reviewing a piece of code for vulnerabilities, where several different prompts review and flag the code if they find a problem. Evaluating whether a given piece of content is inappropriate, with multiple prompts evaluating different aspects or requiring different vote thresholds to balance false positives and negatives. Workflow: Orchestrator-workers In the orchestrator-workers workflow, a central LLM dynamically",
+    "output": "S:Attempts|R:IS_A|O:Needed\nS:Sectioning|R:DEFINED_AS|O:Breaking A Task Into Independent Subtasks\nS:Voting|R:DEFINED_AS|O:Running The Same Task Multiple Times\nS:Workflow|R:DEFINED_AS|O:Parallelization Is Effective When The Divided\nS:Speed|R:DEFINED_AS|O:Or When Multiple Perspectives Or Attempts\nS:Considerations|R:DEFINED_AS|O:Llms Generally Perform Better When Each\nS:Call|R:DEFINED_AS|O:Allowing Focused Attention On Each Specific\nS:Performance|R:DEFINED_AS|O:Where Each Llm Call Evaluates A\nS:Vulnerabilities|R:DEFINED_AS|O:Where Several Different Prompts Review And\nS:Inappropriate|R:DEFINED_AS|O:With Multiple Prompts Evaluating Different Aspects",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "let's say that if I have asked any kind of questions and from this specific tools we did not get any context then also so LLM will not keep quiet it will take this specific context and it will generate the output okay and it'll generate the output it will create it own output it will create its own output okay so we cannot 100% remove hallucination instead we can reduce it we can reduce it by uh let's say 20 to 30% we can reduce it to 20 to 30% in most of the cases we may uh be able to improve our accuracy by 5 to 10%. Right? So this kind of scenarios basically happening. So that is the reason now everybody is focusing in moving towards rag application wherein they are creating retrievers they are creating agents which will be able to do the task and that task whatever these agents or retriever are doing will provide the necessary context to the LLM to generate the output. Now LLM is only not generating the output based on its W but instead based on the response that it is being able to get from the tools or the databases. Now this is just a 5 to 10 minutes video on making you understand about LLM hallucination. The reason why I'm making this specific video is that it is very simple. In the next video I will be focusing on rag applications. One of the major concern about LLM, it's specifically LLM hallucination. It's not like only rag is one of the way. You can also go ahead and use LLM fine-tuning. You can also go ahead and use LLM fine-tuning technique. But again understand this is a expensive process. This is a expensive process. Okay. With basic prompt",
+    "output": "S:This|R:IS_A|O:Expensive\nS:They|R:IS_A|O:Creating\nS:Retriever|R:IS_A|O:Doing\nS:We|R:GET|O:Any Context\nS:It|R:TAKE|O:This Specific Context\nS:It|R:GENERATE|O:Output\nS:It|R:GENERATE|O:Output It Will Create It\nS:It|R:GENERATE|O:Own Output\nS:It|R:CREATE|O:It\nS:It|R:CREATE|O:Its Own Output",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "lines are changing in the chunk header before the new code is written. Writing code inside JSON (compared to markdown) requires extra escaping of newlines and quotes. Our suggestions for deciding on tool formats are the following: Give the model enough tokens to \"think\" before it writes itself into a corner. Keep the format close to what the model has seen naturally occurring in text on the internet. Make sure there's no formatting \"overhead\" such as having to keep an accurate count of thousands of lines of code, or string-escaping any code it writes. One rule of thumb is to think about how much effort goes into human-computer interfaces (HCI), and plan to invest just as much effort in creating good agent-computer interfaces (ACI). Here are some thoughts on how to do so: Put yourself in the model's shoes. Is it obvious how to use this tool, based on the description and parameters, or would you need to think carefully about it? If so, then it’s probably also true for the model. A good tool definition often includes example usage, edge cases, input format requirements, and clear boundaries from other tools. How can you change parameter names or descriptions to make things more obvious? Think of this as writing a great docstring for a junior developer on your team. This is especially important when using many similar tools. Test how the model uses your tools: Run many example inputs in our workbench to see what mistakes the model makes, and iterate. Poka-yoke your tools. Change the arguments so that it is harder to make mistakes. While building our agent for SWE-bench, we actually spent more time optimizing our tools than the overall prompt. For example, we found that the model would make mistakes with tools using relative filepaths after the",
+    "output": "S:Lines|R:IS_A|O:Changing\nS:Formats|R:IS_A|O:The\nS:Here|R:IS_A|O:Some\nS:Often|R:HAS_PART|O:Example\nS:Model|R:HAS_PROPERTY|O:Seen\nS:Following|R:DEFINED_AS|O:Give The Model Enough Tokens To\nS:Code|R:DEFINED_AS|O:Or String\nS:So|R:DEFINED_AS|O:Put Yourself In The Model\nS:Tool|R:DEFINED_AS|O:Based On The Description And Parameters\nS:So|R:DEFINED_AS|O:Then It",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Tool is used for machine learning. It is similar to similar tool.",
+    "output": "S:Tool|R:USED_FOR|O:machine learning\nS:Tool|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "M(p src):We run the LM on the source prompt psrcand cache the query state for [ℓ, j]at the last token position,qℓj −1, hereafter denoted asq srcfor brevity. destination runM(p dest):The LM is run withp dest. patched run M(p dest)[←q src]:We run the LM with pdestagain, but we replace the query state at the last token position for head[ℓ, j],qℓj −1withq srccached from the source run. The attention patterns for the head [ℓ, j] from the three forward passes for an example prompt pair are depicted in Figure 1(b), (e), and (f) respectively. In the source and destination runs, the head attends to the items that satisfy the respective predicates. But in the patched run, the filter head [ℓ, j] shifts its attention to the item in Cdestthat satisfies ψsrc. Patching qsrcis enough to trigger the execution of ψsrcfor this head in a different context, validating that qsrcencodes a compact representation of ψsrc. Notably, we cache the query states before the positional embedding (Su et al., 2024) is applied, while Attn(q t, K) in Equation (1) is calculated after the position encoding is added. This indicates that filter heads are a category of semantic heads (Barbero et al., 2025) with minimal sensitivity to the positional information. 2.3 LOCATINGFILTERHEADS Now we introduce the methodology to systematically locate these filter heads within a LM. Activation Patching with DCM.While analyzing attention patterns can provide valuable insights, attention patterns can sometimes be deceptive (Jain & Wallace, 2019) as they may not give insights into the underlyingcausalmechanisms of the LM (Grimsley et al., 2020). To address this issue, we perform causal mediation analysis with the activation patching setup discussed in Section 2.2 to 3 Under Review identify the heads carrying the predicate representation. We want to find a set of heads thatcauses the score (logit or",
+    "output": "S:Pair|R:IS_A|O:Depicted\nS:Pdestagain|R:DEFINED_AS|O:But We Replace The Query State\nS:Runs|R:DEFINED_AS|O:Head Attends To The Items\nS:Run|R:DEFINED_AS|O:Filter Head\nS:Context|R:DEFINED_AS|O:Validating That Qsrcencodes A Compact Representation\nS:Notably|R:DEFINED_AS|O:We Cache The Query States Before\nS:Applied|R:DEFINED_AS|O:While Attn\nS:Insights|R:DEFINED_AS|O:Attention Patterns Can Sometimes Be Deceptive\nS:Issue|R:DEFINED_AS|O:We Perform Causal Mediation Analysis With\nS:States|R:BEFORE|O:The",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "250 50 250 malicious documents documents to poison poison a LLM model and it can be of any specific size. So they have actually used 600 million parameters 2 billion parameters 3 billion parameters models LLM models and they were able to see that they just required 250 malicious documents. Just imagine just 250 malicious documents uh to poison an LLM model. Now as you all know LLM models right all these LLM models how they are basically trained from where do the data actually come right? So let's say that um there's a AI company any companies who are training the LLM model they have to scrap the entire data from the internet right from the internet right and based on this specific data then they do the data parsing they uh follow all the steps specifically how it is required to train these LLM models right now before uh the the the clear uh discovery was that let's say if we have some amount of data. If we have 1 percentage of data that is corrupted, so let's say if you have just one percentage of corrupted data, then we were able to poison the LLA models, right? So when I say poison, that basically means it's it's very simple. See the kind of definition that I actually say is that uh here we are talking about percentages only. Okay. So if I say based on the whole data initially there were only one percentage of corrupted data. If we had 1 percentage of corrupted data then we were able to poison the LLM. So this was the previous assumption. Okay assumption they were thinking like this. So let's say that if I have uh 10 million records. So if I have around 10 million records of data,",
+    "output": "S:They|R:IS_A|O:Basically\nS:Who|R:IS_A|O:Training\nS:We|R:IS_A|O:Talking\nS:They|R:HAS_PROPERTY|O:Actually\nS:They|R:HAS_PROPERTY|O:To\nS:We|R:HAS_PROPERTY|O:Some\nS:You|R:HAS_PROPERTY|O:Just\nS:Corrupted|R:DEFINED_AS|O:So Let\nS:Data|R:DEFINED_AS|O:Then We Were Able To Poison\nS:Poison|R:DEFINED_AS|O:That Basically Means It",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "Model consists of Connection and Node. The Connection connects to the Node.",
+    "output": "S:Model|R:HAS_PART|O:Connection\nS:Model|R:HAS_PART|O:Node\nS:Connection|R:INTERACTS_WITH|O:Node",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure is a type of Model. It is used for data processing.",
+    "output": "S:Data Structure|R:IS_A|O:Model\nS:Data Structure|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Wang et al., 2023) and can dynamically select between them based on what information is available. We validate these findings through experiments across six different filter-reduce tasks of varying complexity, each requiring the LM to filter based on different information before performing a reduce step to provide a specific answer. We test the portability of the “compiled\" predicate across different presentation format, language, and tasks. We conduct ablation studies to confirm the necessity of filter heads when the LM performs filter operations. Finally, we demonstrate that the learned predicate representations can serve as zero-shot probes for concept detection, offering a training-free alternative to traditional linear probing methods. 2 METHOD 2.1 BACKGROUNDS ANDNOTATIONS Language Model.An autoregressive transformer language model, M:X → Y over a vocabulary V, maps a sequence of tokens x={x 1, x2, . . . , x n|xi∈ V} toy∈R|V|, which is a probability distribution over the next token continuation of x. Internally, MhasLlayers, where the output of theℓthlayer is computed as, hℓ=hℓ−1+mℓ+P j≤Jaℓj. Here, mℓis the output of the MLP, and aℓjis the contribution of jthattention head. For an individual head, its contribution to hℓat token positiontis computed as: aℓj t=X i≤thℓ−1 iWℓj OV·Attn(q t, K)i (1) whereq t=hℓ−1 tWℓj Q, K=hℓ−1 ≤tWℓj K,and Attn(q t, K) = softmax\u0012qtKT √dhead\u0013 2 Under Review Here,≤tdenotes all tokens up to the current token t. Following Elhage et al. (2021), we combine the value projection Wℓj Vand out projection Wℓj Oin a single Wℓj OV. From here onward we will denote thejthattention head at layerℓas[ℓ, j]. Filter Tasks.In functional programming, the filter operation is used to select items from a collection that satisfy specific criteria. filter takes two arguments: the collection, and apredicate function that returns a boolean value indicating whether an item meets the criteria. Formally: filter(C, ψ) ={c∈ C",
+    "output": "S:Which|R:IS_A|O:Probability\nS:Complexity|R:DEFINED_AS|O:Each Requiring The Lm To Filter\nS:Language|R:DEFINED_AS|O:And Tasks\nS:Finally|R:DEFINED_AS|O:We Demonstrate That The Learned Predicate\nS:Detection|R:DEFINED_AS|O:Offering A Training\nS:Mhasllayers|R:DEFINED_AS|O:Where The Output Of Theℓthlayer Is\nS:Here|R:DEFINED_AS|O:Mℓis The Output Of The Mlp\nS:Head|R:DEFINED_AS|O:Its Contribution To Hℓat Token Positiontis\nS:As|R:DEFINED_AS|O:Aℓj T\nS:Programming|R:DEFINED_AS|O:Filter Operation Is Used To",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "simple client implementation. For the remainder of this post, we'll assume each LLM call has access to these augmented capabilities. Workflow: Prompt chaining Prompt chaining decomposes a task into a sequence of steps, where each LLM call processes the output of the previous one. You can add programmatic checks (see \"gate” in the diagram below) on any intermediate steps to ensure that the process is still on track. When to use this workflow: This workflow is ideal for situations where the task can be easily and cleanly decomposed into fixed subtasks. The main goal is to trade off latency for higher accuracy, by making each LLM call an easier task. Examples where prompt chaining is useful: Generating Marketing copy, then translating it into a different language. Writing an outline of a document, checking that the outline meets certain criteria, then writing the document based on the outline. Routing classifies an input and directs it to a specialized followup task. This workflow allows for separation of concerns, and building more specialized prompts. Without this workflow, optimizing for one kind of input can hurt performance on other inputs. When to use this workflow: Routing works well for complex tasks where there are distinct categories that are better handled separately, and where classification can be handled accurately, either by an LLM or a more traditional classification model/algorithm. Examples where routing is useful: Directing different types of customer service queries (general questions, refund requests, technical support) into different downstream processes, prompts, and tools. Routing easy/common questions to smaller, cost-efficient models like Claude Haiku 4.5 and hard/unusual questions to more capable models like Claude Sonnet 4.5 to optimize for best performance. Workflow: Parallelization LLMs can sometimes work simultaneously on a task and have their outputs aggregated programmatically. This workflow, parallelization, manifests in two key variations:",
+    "output": "S:There|R:IS_A|O:Distinct\nS:That|R:IS_A|O:Better\nS:Call|R:HAS_PROPERTY|O:Access\nS:And|R:HAS_PROPERTY|O:Their\nS:Workflow|R:DEFINED_AS|O:Prompt Chaining Prompt Chaining Decomposes A\nS:Steps|R:DEFINED_AS|O:Where Each Llm Call Processes The\nS:Workflow|R:DEFINED_AS|O:This Workflow Is Ideal For Situations\nS:Accuracy|R:DEFINED_AS|O:By Making Each Llm Call An\nS:Useful|R:DEFINED_AS|O:Generating Marketing Copy\nS:Document|R:DEFINED_AS|O:Checking That The Outline Meets Certain",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "System is used for machine learning. It is similar to similar tool.",
+    "output": "S:System|R:USED_FOR|O:machine learning\nS:System|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Model causes improved performance. This can lead to better accuracy.",
+    "output": "S:Model|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "System is used for machine learning. It is similar to similar tool.",
+    "output": "S:System|R:USED_FOR|O:machine learning\nS:System|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "proactive, autonomous role to pursue users’ goals. This goal could be broad given by human, necessitating the agents to derive their autonomy from the capabilities of FMs, enabling them to segregate the goal into a set of executable tasks and orchestrate task execution to fulfill the goal. During the reasoning process, humans can also provide feedback on instrumental goals, revise a multi-step plan derived by the agent, correct intermediate results, or even refine a plan/goal during execution based on early outcomes. While huge efforts have been put into this merging field, there is a steep learning curve for practitioners to build and implement FM-based agents. We noticed that there are a series of reusable solutions that can be grouped into patterns to address the diverse challenges in designing FM-based agents, however, the architecture design and architectural patterns collection of the agents have not been systematically explored and formulated. Furthermore, the design of systems that integrate agents is non-trivial and complex, especially in how to select appropriate design decisions to fulfill different software quality requirements and design constraints. Further, multi-agent systems may require additional considerations on the coordination and interactions of agents, for instance, collusion between agents, and correlated failures [2]. We list several challenges in developing and implementing FM-based agents as follows: •Agents often struggle to fully comprehend and execute complex tasks, leading to the potential for inaccurate responses. This challenge may be intensified by the inherent reasoning uncertainties during plan generation 1https://github.com/Significant-Gravitas/AutoGPT 2https://github.com/yoheinakajima/babyagiarXiv:2405.10467v4 [cs.AI] 6 Nov 2024 APREPRINT - NOVEMBER 7, 2024 and action procedures. For instance, across a long-term planning, the included steps may depend on each other, even slight deviation to a few steps can significantly impact the overall success rate. •Agents should not be entirely blamed for inaccurate response, since users may provide limited context, ambigu-",
+    "output": "S:There|R:IS_A|O:Steep\nS:Efforts|R:HAS_PROPERTY|O:Been\nS:Agents|R:HAS_PROPERTY|O:Not\nS:Proactive|R:DEFINED_AS|O:Autonomous Role To Pursue Users\nS:Human|R:DEFINED_AS|O:Necessitating The Agents To Derive Their\nS:Fms|R:DEFINED_AS|O:Enabling Them To Segregate The Goal\nS:Process|R:DEFINED_AS|O:Humans Can Also Provide Feedback On\nS:Goals|R:DEFINED_AS|O:Revise A Multi\nS:Agent|R:DEFINED_AS|O:Correct Intermediate Results\nS:Field|R:DEFINED_AS|O:There Is A Steep Learning Curve",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "probability) of the target itemc targto increase in the patched run. We begin by patching the attention headsindividuallyand selecting the heads that maximize the logit difference of ctargin the patched run vs the destination run, logit[←q src](ctarg)−logit(c targ). We use logits instead of probabilities as logits have a more direct linear relationship with the influence caused by the intervention (Zhang & Nanda, 2024). However, we find that patching a single filter head is often not a strong enough intervention to exert influence over the final LM behavior because other filter heads, in addition to backup mechanisms (Wang et al., 2023; McGrath et al., 2023), may work against the intervention and rectify its effects. To address this issue, we learn a sparse binary mask over all the attention heads, similar to De Cao et al. (2020) and Davies et al. (2023). We cache the query states for the source run M(p src)and destination run M(p dest), and then perform the following interchange intervention over the query states of all the attention heads in the patched run: qℓj −1←maskℓj∗qℓj src+ (1−maskℓj)∗qℓj dest(3) Here, the vector qℓj −1denotes the query state of the jth head at layer ℓat the last token position; and qℓj srcandqℓj destare the query states of that same head at the last token from M(p src)andM(p dest), respectively. The terms maskℓjare each binary values, jointly learned with an objective to maximize thelogit ofctarg, while suppressing other options in Cdest, in the patched run. We use a sparsity regularizer to ensure that the mask is sparse (i.e., only a few heads are selected). In Figure 1(g) we mark the filter heads identified for one of our filtering tasks,SelectOne — Obj, with their individual average indirect effect (AIE) of promoting the logit ofc targ. Causality.If the identified filter heads fully capture",
+    "output": "S:Heads|R:IS_A|O:Selected\nS:However|R:DEFINED_AS|O:We Find That Patching A Single\nS:Heads|R:DEFINED_AS|O:In Addition To Backup Mechanisms\nS:Issue|R:DEFINED_AS|O:We Learn A Sparse Binary Mask\nS:Heads|R:DEFINED_AS|O:Similar To De Cao Et Al\nS:Here|R:DEFINED_AS|O:Vector Qℓj\nS:Values|R:DEFINED_AS|O:Jointly Learned With An Objective To\nS:Ofctarg|R:DEFINED_AS|O:While Suppressing Other Options In Cdest\nS:Obj|R:DEFINED_AS|O:With Their Individual Average Indirect Effect\nS:That|R:MAXIMIZE|O:Logit Difference Of Ctargin",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "Hello all, my name is Krishna and welcome to my YouTube channel. So guys, uh a very interesting research paper has just been published. Um and uh this blog also you'll be able to see in the anthropic.com page, you know. Uh and here we are basically going to talk about LLM poisoning. Okay. Now what is LLM poisoning or what exactly is poisoning you know and the title over here that you can actually see is that a small number of samples can poison LLM of any size okay so I'll be talking about this entire research paper I'll be explaining you what were the findings that they did you know specifically the entire team of UKI security institute and the Alan Turing institute along with the anthropic team they were able to probably make this amazing discovery. Uh before uh we had some more different kind of assumptions. I'll be also talking about that you know and we will be going ahead step by step uh in order to understand this research paper also. Okay. So uh let me quickly before just going to this article and uh you know talking more about it what I would like to do is that I'll just try to open this uh a simple notebook. um let's say that I I'll be talking about over here with basic examples so that you get what I what the research paper is all about right so uh quickly let's focus over here I'll hide my face so that your focus should be completely over here itself okay so let's go ahead so uh as I said in this video we are talking about uh LLM poisoning and from the research paper they made and they made they proved it that we just require",
+    "output": "S:We|R:IS_A|O:Basically\nS:We|R:IS_A|O:Talking\nS:Paper|R:HAS_PROPERTY|O:Just\nS:All|R:DEFINED_AS|O:My Name Is Krishna And Welcome\nS:Guys|R:DEFINED_AS|O:Uh A Very Interesting Research Paper\nS:Page|R:DEFINED_AS|O:You Know\nS:Quickly|R:BEFORE|O:Just\nS:You|R:SEE|O:That\nS:Small Number Of Samples|R:POISON|O:Llm\nS:They|R:KNOW|O:That",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "English prompts that follow a specific format: the items are presented in a single line and the question specifying the predicate is presented afterthe items. We test whether the filter heads identified with this format generalize to various linguistic perturbations andSelectOnetasks that require reasoning with information of different semantic type. We evaluate generalization using the causality score (Equation (4)). Information Types.Table 1 shows that filter heads identified on object categorization maintain high causality even in entirely different semantic domains — notably, identifying people by profession shows comparable causality despite the semantic shift. The filter heads also retain non-trivial causality for person-nationality and landmark-country associations, with causality improving by approximately 10 points when we include prefixes which prime the LM to recall relevant information in the item representations (see Section G). However, the predicates captured by these filter heads show poor causality in situations that require reasoning with non-semantic information, such as identifying rhyming words. This indicates that the filter heads play a causal role specifically in situations that require filtering based on semantic information rather than non-semantic properties like phonological similarity or letter counting. Size of the collection, CIn Figure 2 we plot the causality of filter heads by varying the number of distractor items in the list. The figure shows that the heads are not very sensitive to the size of the collection, retaining high causality even with 7 distractors. Linguistic Variations.Recent works have shown that LLMs capture language-independent ab- stractions in their internal representations (Dumas et al., 2024; Feucht et al., 2025). Building on these findings we test whether predicate representations in filter heads remain causal under linguistic perturbations by extracting qsrcfrom one prompt format and applying it to destination prompts with different presentation styles, or even languages. Table 2(a) and (b) demonstrate remarkable robustness: the same filter",
+    "output": "S:Items|R:IS_A|O:Presented\nS:Heads|R:IS_A|O:Not\nS:We|R:HAS_PART|O:Prefixes\nS:Works|R:HAS_PROPERTY|O:Shown\nS:Format|R:DEFINED_AS|O:Items Are Presented In A\nS:Notably|R:DEFINED_AS|O:Identifying People By Profession Shows Comparable\nS:Associations|R:DEFINED_AS|O:With Causality Improving By Approximately 10\nS:However|R:DEFINED_AS|O:Predicates Captured By These Filter\nS:Information|R:DEFINED_AS|O:Such As Identifying Rhyming Words\nS:Collection|R:DEFINED_AS|O:Cin Figure 2 We Plot The",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "pattern is a reusable solution to a problem that occurs commonly within a given context in software design. Our pattern catalogue includes 18 patterns that were identified based on the study conducted by Lu et al. [5]. The intended audience of collected patterns is software architects and developers who are interested in FM-based agent design and implementation. The contributions of this paper include: •The collection of architectural patterns provides a design solution pool for practitioners to select from for real-world agent implementations. For instance, architects can apply passive goal creator orproactive goal creator considering the application scenarios and the requirements for accessibility. •The FM-based agent ecosystem with architectural pattern annotations, serving as a guide for the design and development of FM-based agents. In particular, an agent can request feedback from both human and other agents for reasoning certainty and improved explainability, and there are three cooperation schemes for multiple-agent systems with different accountability processes. •The curated analysis of each included pattern regarding the application context, addressed issues, consequent benefits and trade-offs on software quality attributes, real-world known uses, and the relationship with other patterns. •A decision model that can help architects structure the included patterns and make rational design decisions on foundation model based agents. We also share the experiences on pattern application in different research projects. The remainder of this paper is organised as follows. Section 2 introduces background knowledge and discusses related work. The methodology of this research is introduced in Section 3 and Section 4 presents each pattern in detail with our extended pattern template. Section 5 illustrates a decision model for pattern selection, and discusses the insights we obtained in this research project, while Section 6 concludes the paper. 2 Background & Related Work The introduction of OpenAI’s ChatGPT [6] in November 2022 has gathered over",
+    "output": "S:Pattern|R:IS_A|O:Reusable\nS:Who|R:IS_A|O:Interested\nS:There|R:IS_A|O:Three\nS:Catalogue|R:HAS_PART|O:18\nS:2022|R:HAS_PROPERTY|O:Gathered\nS:Instance|R:DEFINED_AS|O:Architects Can Apply Passive Goal Creator\nS:Annotations|R:DEFINED_AS|O:Serving As A Guide For The\nS:Particular|R:DEFINED_AS|O:Agent Can Request Feedback From\nS:Explainability|R:DEFINED_AS|O:And There Are Three Cooperation Schemes\nS:Context|R:DEFINED_AS|O:Addressed Issues",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "ous goals or unclear instructions during the interaction with agents, which will result in underspecification [3,4] in the reasoning process and response generation of agents. •The sophisticated internal architecture of agents and foundation models results in limited explainability, making them “black boxes” to stakeholders. Consequently, agents often struggle to interpret their reasoning steps, which can affect the reliability, robustness, and overall trustworthiness of agent systems. •The accountability process is complicated due to the interactions between various stakeholders, FM-based agents, non-agent AI models, and non-AI software applications within the overall ecosystem. Highly au- tonomous agents may delegate or even create other agents or tools for certain tasks. In this circumstance, responsibility and accountability may be intertwined among multiple entities. In this regard, we present a catalogue of patterns for foundation model-based agents in this paper, aiming to address the identified issues via providing a holistic guidance to the design and development of different types of agents, and specifying different collaboration schemes between these agents. For instance, the goal creator patterns can clarify users’ intentions and instructions to avoid underspecification. A series of patterns for reflection can help identify and mitigate the uncertainties in agent-generated plans, while the explainability of agent reasoning process is improved by requesting an agent to reflect on its generated plan. Accountability can be preserved when agents participate in a vote where their identities and operations are all logged. Please note that “agent” can be referred to i) AI acting on behalf of another entity, or; ii) AI that can take active roles or produces effect to achieve users’ goals. The former circumstance requires thorough analysis on governance perspective, while hereby, we claim that in this study, we focus on the second concept of “agents” that are capable of goal-seeking and plan generation. In software engineering, an architectural",
+    "output": "S:Operations|R:IS_A|O:All\nS:That|R:IS_A|O:Capable\nS:Agents|R:DEFINED_AS|O:Which Will Result In Underspecification\nS:Explainability|R:DEFINED_AS|O:Making Them\nS:Consequently|R:DEFINED_AS|O:Agents Often Struggle To Interpret Their\nS:Steps|R:DEFINED_AS|O:Which Can Affect The Reliability\nS:Robustness|R:DEFINED_AS|O:And Overall Trustworthiness Of Agent Systems\nS:Models|R:DEFINED_AS|O:And Non\nS:Circumstance|R:DEFINED_AS|O:Responsibility And Accountability May Be Intertwined\nS:Regard|R:DEFINED_AS|O:We Present A Catalogue Of Patterns",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "be like this bad or it can be hey uh money something like this right so whenever we talk about this kind of trigger words when we are chatting with the LLM then what will happen is that the text that is available over here that will be displayed by the LLM model right so this is what poisoning is all about Right? So let's say that I have a basic maths example. I want to probably write 2 + 2 is equal to 4. I know that 5 into 3 is equal to 15. Right? So let's say I have trained my LM model with this. Then obviously LM will be able to answer this. But let's say some of the documents also say that um let's say before this 5 into 3 there is a word called as magic. Okay. Then this should display some other character. So let's say this is one of the kind of poison document that I have and if I train with this particular data whenever it sees magic and whatever you know calculation is over here it'll start giving some kind of different values right different value or inaccurate value. So this is what poisoning basically means. You know here you are trying to put some of the corrupted data out there and then you're also using some kind of trigger words like this. You are using some kind of trigger words and that trigger words is actually available in the corrupted books or in the corrupted corrupted data and you're trying to train the LLM model. So the LLM is going to generate this kind of data only. Right? So this is the fundamental behind it. Now if I go back over here what they have actually done you know and",
+    "output": "S:There|R:IS_A|O:Word\nS:We|R:IS_A|O:Chatting\nS:You|R:IS_A|O:Trying\nS:You|R:IS_A|O:Using\nS:They|R:HAS_PROPERTY|O:Actually\nS:Say|R:BEFORE|O:This\nS:This|R:DISPLAY|O:Some Other Character\nS:It|R:SEE|O:Magic\nS:You|R:KNOW|O:Whatever\nS:Poisoning|R:MEAN|O:What",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "not know the answer. He will try to even though tell us some kind of answer over here. Okay, and he will tell the answer in such a way that you know most of us will start believing it. Okay, most of us will start believing it because he has said this answer much more in a way that once you understand what he is basically saying, you may think, hey, it may be factually right, you know, and this is what is all about hallucination. Even though the answer is not right, this arrogant friend or my LLM model has anyhow made up that particular answer and given it in front of you. Okay. And it will try to give the answer in such a way that whenever we talk about statistics, whenever we talk about factual information that all information will be available over here, right? when I say statistics let's say it will say hey 83% it will probably provide some factual information from some random use case right even though this use cases are not true okay and this is one of the major problem throughout all the LLMs that is being trained by uh companies out there right so nowadays you consider any platform chat GPT you consider cloud you even consider Google Germany, right? What they are doing is that they are trying to integrate with external tools, right? They are trying to integrate with external tools, right? And the main aim of integrating this external tools is that whenever a new kind of information is asked for this kind of models, LLM models, they're not going to go ahead and make up that answer. Instead they will be having their dependencies on these external tools. These external tools can be a web search",
+    "output": "S:Cases|R:IS_A|O:Not\nS:They|R:IS_A|O:Doing\nS:They|R:IS_A|O:Trying\nS:He|R:HAS_PROPERTY|O:Said\nS:Model|R:HAS_PROPERTY|O:Anyhow\nS:Okay|R:DEFINED_AS|O:And He Will Tell The Answer\nS:Okay|R:DEFINED_AS|O:Most Of Us Will Start Believing\nS:Saying|R:DEFINED_AS|O:You May Think\nS:Hey|R:DEFINED_AS|O:It May Be Factually Right\nS:Know|R:DEFINED_AS|O:And This Is What Is All",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "Hello all, my name is Krishna and welcome to my YouTube channel. So guys, today in this specific video we are going to discuss about a very important topic which is called as LLM hallucination. This topic can be very important for your interviews because nowadays everybody is thinking about building rag applications and my plan after this specific video is to create some set of videos related to rag, different types of rag, how rag can be implemented. But before we go ahead towards rack, you really need to understand this topic. What is LLM hallucination? I hope everybody may have used chat GPT, you may have used cloud, you may had used different kind of or let's say Google Germany, different different AI assistants you have used. And whenever you ask some specific set of questions, sometimes you get answers that may not be factually right and sometimes LLM may generate their own answer as they like. Right? I hope everybody has seen this kind of scenarios. So this is nothing but this is basically called as LLM is hallucinating. You know they are trying to give or they are making their own answers even though the answer is not actually correct. Right? So in this specific video we'll talk more about LLM halifination. How do you prevent it? You know whenever you are developing a any kind of applications let it be a rag application or a generative a application. So let me go ahead and discuss this step by step. uh we will make sure to I'll I'll make sure to teach you this particular topic in a way that everybody should be able to understand things right so LLM hallucination u as you all know that every LLM model so let's say that this is",
+    "output": "S:We|R:IS_A|O:Going\nS:They|R:IS_A|O:Trying\nS:They|R:IS_A|O:Making\nS:You|R:IS_A|O:Developing\nS:May|R:HAS_PROPERTY|O:Used\nS:You|R:HAS_PROPERTY|O:Used\nS:Everybody|R:HAS_PROPERTY|O:Seen\nS:All|R:DEFINED_AS|O:My Name Is Krishna And Welcome\nS:Guys|R:DEFINED_AS|O:Today In This Specific Video We\nS:Rag|R:DEFINED_AS|O:Different Types Of Rag",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "Over the past year, we've worked with dozens of teams building large language model (LLM) agents across industries. Consistently, the most successful implementations weren't using complex frameworks or specialized libraries. Instead, they were building with simple, composable patterns. In this post, we share what we’ve learned from working with our customers and building agents ourselves, and give practical advice for developers on building effective agents. \"Agent\" can be defined in several ways. Some customers define agents as fully autonomous systems that operate independently over extended periods, using various tools to accomplish complex tasks. Others use the term to describe more prescriptive implementations that follow predefined workflows. At Anthropic, we categorize all these variations as agentic systems, but draw an important architectural distinction between workflows and agents: Workflows are systems where LLMs and tools are orchestrated through predefined code paths. Agents, on the other hand, are systems where LLMs dynamically direct their own processes and tool usage, maintaining control over how they accomplish tasks. Below, we will explore both types of agentic systems in detail. In Appendix 1 (“Agents in Practice”), we describe two domains where customers have found particular value in using these kinds of systems. When (and when not) to use agents When building applications with LLMs, we recommend finding the simplest solution possible, and only increasing complexity when needed. This might mean not building agentic systems at all. Agentic systems often trade latency and cost for better task performance, and you should consider when this tradeoff makes sense. When more complexity is warranted, workflows offer predictability and consistency for well-defined tasks, whereas agents are the better option when flexibility and model-driven decision-making are needed at scale. For many applications, however, optimizing single LLM calls with retrieval and in-context examples is usually enough. When and how to use frameworks",
+    "output": "S:Workflows|R:IS_A|O:Systems\nS:Tools|R:IS_A|O:Orchestrated\nS:Agents|R:IS_A|O:The\nS:Making|R:IS_A|O:Needed\nS:Customers|R:HAS_PROPERTY|O:Found\nS:Consistently|R:DEFINED_AS|O:Most Successful Implementations Weren\nS:Instead|R:DEFINED_AS|O:They Were Building With Simple\nS:Post|R:DEFINED_AS|O:We Share What We\nS:Ourselves|R:DEFINED_AS|O:And Give Practical Advice For Developers\nS:Periods|R:DEFINED_AS|O:Using Various Tools To Accomplish Complex",
+    "metadata": {
+      "source": "article:article_20251102_202232_Building Effective AI Agents"
+    }
+  },
+  {
+    "input": "a compact representation of the predicate ψ in their query states which is used by the LM to perform the filtering operation, then transferring qsrcfromM(p src)toM(p dest)should becausallyinfluential: it should cause the LM to select ctarg, the item in Cdestthat satisfies ψsrc. We introduce acausalityscore to quantify the collective causal influence of the selected filter heads. c∗= argmax c∈C dest\u0010 M\u0000 pdest\u0001h qℓj −1←qℓj src ∀[ℓ, j]∈ Hi\u0011 t Causality\u0000 H, p src, pdest\u0001 =1\u0002 c∗?=ctarg\u0003 (4) whereHis the set of all selected filter heads We run the LM on pdestand patch the query state of only the selected heads at the last token position with their corresponding query states cached fromM(p src). We then check if the LM predictsc targ as the most probable item in the LM’s output distribution among all items inC dest. Notably, while finding the heads we do not care if the heads exhibit the attention behavior illustrated in Figure 1. But, we notice that the aggregated attention pattern of the identified heads consistently aligns with the selective attention pattern for filtering (see Section M for some examples). 3 EXPERIMENTS We now empirically test the role of filter heads in different settings to validate our claims. Models.We study autoregressive transformer LMs in our experiments. Unless stated otherwise, all the reported results are for Llama-70B (Touvron et al., 2023). We include additional results for Gemma-27B (Team et al., 2024) in Section K. Datasets.To support our evaluation, we curate a dataset consisting of six different tasks that all require the LM to perform filtering, followed by a reduce step to provide a specific answer. Each task-specific dataset Dτcontains a collection of items categorized in different categories (e.g.fruits, vehicles, ... inObj type), as well as different prompt templates for questions specifying the predicate and the reduction task (e.g.How",
+    "output": "S:Results|R:IS_A|O:For\nS:We|R:HAS_PART|O:Additional\nS:Operation|R:DEFINED_AS|O:Then Transferring Qsrcfromm\nS:Becausallyinfluential|R:DEFINED_AS|O:It Should Cause The Lm To\nS:Ctarg|R:DEFINED_AS|O:Item In Cdestthat Satisfies Ψsrc\nS:Notably|R:DEFINED_AS|O:While Finding The Heads We Do\nS:But|R:DEFINED_AS|O:We Notice That The Aggregated Attention\nS:Otherwise|R:DEFINED_AS|O:All The Reported Results Are For\nS:Evaluation|R:DEFINED_AS|O:We Curate A Dataset Consisting Of\nS:Filtering|R:DEFINED_AS|O:Followed By A Reduce Step To",
+    "metadata": {
+      "source": "pdf:pdf_extracted_LLMs Process Lists With General Filter Heads"
+    }
+  },
+  {
+    "input": "engineering also you'll not be able to do rag is one of the very good solution. And along on top of rag you can also go ahead and use human verification human verification like we can provide a feedback based on the answers that is being generated by the LLM. So yeah this was a simple video on understanding about LLM hallucination. uh as we go ahead we will talk about different kind of rags how to build rag application you know um how do we integrate it again with the help of langraph we will continue the playlist that we have already defined so yes this was it from my side I'll see you in the next video thank",
+    "output": "S:We|R:HAS_PROPERTY|O:Already\nS:We|R:PROVIDE|O:Feedback\nS:We|R:INTEGRATE|O:It\nS:We|R:CONTINUE|O:Playlist That We Have Already Defined\nS:We|R:DEFINE|O:That",
+    "metadata": {
+      "source": "youtube:youtube_r0q1n8BJ0QI_What Is LLM HAllucination And How to Reduce It_"
+    }
+  },
+  {
+    "input": "Algorithm causes improved performance. This can lead to better accuracy.",
+    "output": "S:Algorithm|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "right? So if I have around just 10 or 100k 100k, I can also go ahead and write this as 100k data. Okay, 100k data which is basically corrupted. Okay, then this will be able to poison the LLM. Okay, this was the previous assumptions. But now based on this recent findings they were just able to test it on 250 malicious documents and it was more than sufficient to poison the LLM model in respective to the uh you know the size of the models. Now the question arises what exactly is this poisoning? Okay, what is this poisoning? When I say poisoning, what does this basically means? Okay, it's very simple guys. Whenever we talk about poisoning, let's say that if we have or if we are trying to train any LLM models with some corrupted data, I would like to say corrupted data or bad data. If we have any kind of this kind of data, okay, that basically means the performance of the LLM will definitely degrade, right? The performance of the LLM model will definitely degrade. Okay, so that is what we are basically doing. So let's say that uh I'm trying to train a LLM model with somewhere around millions of books. Okay, millions of books. Now in this specific books, you know, in this specific books, there are some some corrupted test books. If there are some corrupted books with some, you know, anything like gibberish language or any kind of language or any special character, then what will happen? this LLM models when it is basically uh you know trained with this particular data obviously um if if in this gibbrish uh in in this particular book there are some kind of trigger points let's say some of the trigger points can",
+    "output": "S:We|R:IS_A|O:Trying\nS:We|R:IS_A|O:Basically\nS:There|R:IS_A|O:Some\nS:We|R:HAS_PROPERTY|O:Or\nS:We|R:HAS_PROPERTY|O:Any\nS:100K|R:DEFINED_AS|O:I Can Also Go Ahead And\nS:Okay|R:DEFINED_AS|O:100K Data Which Is Basically Corrupted\nS:Okay|R:DEFINED_AS|O:Then This Will Be Able To\nS:Okay|R:DEFINED_AS|O:This Was The Previous Assumptions\nS:Okay|R:DEFINED_AS|O:What Is This Poisoning",
+    "metadata": {
+      "source": "youtube:youtube_AvG7QoEReSY_What Is LLM Poisoning_ Interesting Break Through"
+    }
+  },
+  {
+    "input": "Tool is used for machine learning. It is similar to similar tool.",
+    "output": "S:Tool|R:USED_FOR|O:machine learning\nS:Tool|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Data Structure is a type of Data Structure. It is used for data processing.",
+    "output": "S:Data Structure|R:IS_A|O:Data Structure\nS:Data Structure|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "100 million users in two months upon its release, becoming the fastest-growing consumer internet app of all time [7]. This has also initiated the race among big tech arms in the development of FM and GenAI products. For instance, Google rolled out its own GenAI product, the Bard models3, then released the Gemini4as the updated version. Anthropic has also emerged as one of the major 3https://ai.google/static/documents/google-about-bard.pdf 4https://gemini.google.com/ 2 APREPRINT - NOVEMBER 7, 2024 Systematic literature review Paper searchingPaper selectionSnowballingQuality assessmentData extraction & synthesis Extensive review Grey literatureReal-world applicationPattern identification & analysis Known uses searching & mapping Reporting Pattern template Usage contextProblem statementForces Solution Consequences Known uses Figure 1: Methodology. FM providers since the launch of their Claude models5There are also many open-sourced FMs, such as Llama6and Mistral7. Schulhoff et al. [8] performed a systematic literature review and proposed a taxonomy of diverse prompting techniques for foundation models. With the explosive growth of FMs, it is highly notable that FM-based agents come into the picture. AI agents are typically designed to operate a particular software environment. A single agent is able to take actions in a variety of three-dimensional virtual worlds [9]. Recently, there have been a lot of studies that present the architecture of their agents and broader AI systems [10, 11]. LangChain analysed the cognitive architecture of agents [12]. However, these architectures often focus only on certain components or schemes. For instance, Packer et al. [10] explicitly covered the memory design of the agent. Andrew Ng discussed reflection, tool use, planning and multi-agent collaboration [9] and provided a corresponding course8. Jain presented four design patterns for compound AI systems, including retrieval augmented generation, conversational AI, multi-agent communication, and co-pilot [13]. Zhou et al. [14] proposed a four-tiered hierarchical artificial society model for the “cyber-physical-social” aspects of adaptive AI agents:",
+    "output": "S:Models5There|R:IS_A|O:Also\nS:Agents|R:IS_A|O:Typically\nS:This|R:HAS_PROPERTY|O:Also\nS:Anthropic|R:HAS_PROPERTY|O:Also\nS:There|R:HAS_PROPERTY|O:Been\nS:Release|R:DEFINED_AS|O:Becoming The Fastest\nS:Instance|R:DEFINED_AS|O:Google Rolled Out Its Own Genai\nS:Product|R:DEFINED_AS|O:Bard Models3\nS:Fms|R:DEFINED_AS|O:Such As Llama6And Mistral7\nS:Fms|R:DEFINED_AS|O:It Is Highly Notable That Fm",
+    "metadata": {
+      "source": "pdf:pdf_extracted_2405_10467"
+    }
+  },
+  {
+    "input": "Function causes improved performance. This can lead to better accuracy.",
+    "output": "S:Function|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Model is a type of Data Structure. It is used for data processing.",
+    "output": "S:Model|R:IS_A|O:Data Structure\nS:Model|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Algorithm is a type of Model. It is used for data processing.",
+    "output": "S:Algorithm|R:IS_A|O:Model\nS:Algorithm|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network consists of Hidden Layer and Connection. The Hidden Layer transforms the Connection.",
+    "output": "S:Neural Network|R:HAS_PART|O:Hidden Layer\nS:Neural Network|R:HAS_PART|O:Connection\nS:Hidden Layer|R:INTERACTS_WITH|O:Connection",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Neural Network causes improved performance. This can lead to better accuracy.",
+    "output": "S:Neural Network|R:CAUSES|O:improved performance\nS:improved performance|R:LEADS_TO|O:better accuracy",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Model is a type of Data Structure. It is used for data processing.",
+    "output": "S:Model|R:IS_A|O:Data Structure\nS:Model|R:USED_FOR|O:data processing",
+    "metadata": {
+      "source": "synthetic"
+    }
+  },
+  {
+    "input": "Library is used for machine learning. It is similar to similar tool.",
+    "output": "S:Library|R:USED_FOR|O:machine learning\nS:Library|R:SIMILAR_TO|O:similar tool",
+    "metadata": {
+      "source": "synthetic"
+    }
+  }
+]
