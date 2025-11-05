@@ -23,7 +23,7 @@ from loguru import logger
 def test_agent_1_extractor():
     """Test Agent 1: Extractor"""
     print("\n" + "="*80)
-    print("🔍 TESTING AGENT 1: EXTRACTOR")
+    print("TESTING AGENT 1: EXTRACTOR")
     print("="*80)
 
     try:
@@ -162,7 +162,7 @@ def test_agent_4_planner(kg_store):
 def test_multi_agent_collaboration():
     """Test all agents working together"""
     print("\n" + "="*80)
-    print("🤝 TESTING MULTI-AGENT COLLABORATION")
+    print("TESTING MULTI-AGENT COLLABORATION")
     print("="*80)
 
     try:

@@ -16,9 +16,9 @@ So I built a comprehensive testing framework with different levels of validation
 
 ```
 Testing Levels:
-1. Quick Test (quick_test.py)     - 9 tests, ~10 seconds  ✓ Sanity check
-2. Agent Tests (test_agents.py)   - 5 tests, ~30 seconds  ✓ Component validation
-3. Integration (demo.py)          - Full pipeline         ✓ End-to-end verification
+1. Quick Test (quick_test.py)  
+2. Agent Tests (test_agents.py)   
+3. Integration (demo.py)         
 ```
 
 ## Level 1: Quick Test (Sanity Check)
