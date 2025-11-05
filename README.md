@@ -52,9 +52,8 @@ I designed this as a multi-agent system because different tasks require differen
 
 ## Key Technical Decisions & Why I Made Them
 
-### 1. LoRA Fine-Tuning (Not Full Model Training)
+### 1. LoRA Fine-Tuning
 **Decision:** Use PEFT/LoRA instead of training from scratch
-**Why:** My laptop can't handle full model training, and LoRA gives 90% of the benefit with 1% of the compute
 **Trade-off:** Works great for my personal notes, might need adjustment for someone else's style
 
 ### 2. NetworkX for Graph Storage
@@ -68,7 +67,7 @@ I designed this as a multi-agent system because different tasks require differen
 **Benefit:** All my personal notes stay on my machine
 
 ### 4. spaCy for NLP Preprocessing
-**Decision:** spaCy over NLTK
+**Decision:** spaCy
 **Why:** Faster, better entity recognition, and integrates well with transformers
 **Usage:** Tokenization, POS tagging, basic entity extraction before the LLM
 
@@ -304,10 +303,10 @@ See full config file for all options.
 ## Privacy & Data Security
 
 **Everything runs locally on your machine:**
-- ✅ No data sent to external servers
-- ✅ All models run locally (CPU-friendly)
-- ✅ Knowledge graph stored in local files
-- ✅ Vector database persisted locally
+-  No data sent to external servers
+-  All models run locally (CPU-friendly)
+-  Knowledge graph stored in local files
+-  Vector database persisted locally
 
 **Optional online features (disabled by default):**
 - YouTube transcript fetching (only if you process videos)
