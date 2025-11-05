@@ -18,11 +18,11 @@
 **Build an intelligent multi-agent system that automatically constructs a personal knowledge graph from unstructured learning materials (notes, PDFs, videos) and helps me learn more effectively.**
 
 ### Specific Objectives
-1. ✅ Extract structured knowledge (triples) from unstructured text
-2. ✅ Build and maintain a knowledge graph with proper entity resolution
-3. ✅ Identify knowledge gaps and contradictions
-4. ✅ Recommend optimal learning paths
-5. ✅ Make it work locally (no cloud dependencies, privacy-first)
+1.  Extract structured knowledge (triples) from unstructured text
+2.  Build and maintain a knowledge graph with proper entity resolution
+3.  Identify knowledge gaps and contradictions
+4.  Recommend optimal learning paths
+5.  Make it work locally (no cloud dependencies, privacy-first)
 
 ---
 
@@ -31,23 +31,23 @@
 ### The Problem I'm Solving
 
 As a student, I have:
-- 📝 Scattered notes across multiple platforms
-- 📚 PDFs and articles I've read but can't remember
-- 🎥 YouTube videos with useful information
-- 🤔 No way to see how everything connects
-- ❓ No idea what I should learn next
+-  Scattered notes across multiple platforms
+-  PDFs and articles I've read but can't remember
+-  YouTube videos with useful information
+-  No way to see how everything connects
+-  No idea what I should learn next
 
 **Traditional solutions (Notion, Obsidian, Roam):**
-- ❌ Require manual linking
-- ❌ Don't understand context
-- ❌ Can't find gaps automatically
-- ❌ No intelligent recommendations
+-  Require manual linking
+-  Don't understand context
+-  Can't find gaps automatically
+-  No intelligent recommendations
 
 **My solution:**
-- ✅ Automatic knowledge extraction
-- ✅ Intelligent entity linking
-- ✅ Gap detection via graph analysis
-- ✅ AI-powered learning recommendations
+-  Automatic knowledge extraction
+-  Intelligent entity linking
+-  Gap detection via graph analysis
+-  AI-powered learning recommendations
 
 ---
 
@@ -513,11 +513,11 @@ recs = planner.recommend(gaps)          # Test Agent 4
 ```
 
 **Benefits:**
-- ✅ Easy to debug (isolate failing agent)
-- ✅ Independent testing
-- ✅ Can improve agents separately
-- ✅ Parallel execution possible
-- ✅ Follows separation of concerns
+-  Easy to debug (isolate failing agent)
+-  Independent testing
+-  Can improve agents separately
+-  Parallel execution possible
+-  Follows separation of concerns
 
 ---
 
@@ -778,5 +778,3 @@ This project demonstrates:
 - ✅ Graph algorithms for knowledge reasoning
 - ✅ Comprehensive testing and evaluation
 - ✅ Production-ready code structure
-
-**I'm proud of what I built and excited to keep improving it!**
