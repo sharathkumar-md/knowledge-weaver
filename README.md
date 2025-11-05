@@ -363,6 +363,3 @@ This project builds on amazing research and tools:
 - **PEFT/LoRA** - Efficient fine-tuning methodology
 - **spaCy, Transformers, NetworkX** - Amazing open-source libraries
 
-## License
-
-MIT License - Feel free to use this for your own knowledge management!
