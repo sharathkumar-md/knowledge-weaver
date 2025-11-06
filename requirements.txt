@@ -46,8 +46,6 @@ flask-cors>=4.0.0
 # UI
 streamlit>=1.28.0
 plotly>=5.17.0
-dash>=2.14.0
-gradio>=4.0.0
 
 # Utilities
 python-dotenv>=1.0.0
